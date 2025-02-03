@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythren</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">ExampleONEFORTESTING</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Lorem</a></li> 
+                <li><a href="about.html">Ipsum</a></li>
+                <li><a href="projects.html">Forgot the third.</a></li>
+                <li><button id="changelogButton" class="changelog-button">📝</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="changelogText" class="changelog-text">
+        <h2 class="changelog-title">Today'sdate</h2> 
+        <p></p>
+        <ul>
+            <li>Created page</li>
+        </ul>
+    </div>
+
+    <script src="mainJs.js"></script>
+    <div class="grid-background"></div>
+    <div class="grid-overlay"></div>
+
+    <script>
+        const changelogButton = document.getElementById('changelogButton');
+        const changelogText = document.getElementById('changelogText');
+
+        changelogButton.addEventListener('click', () => {
+            changelogText.classList.toggle('visible');
+        });
+    </script>
+</body>
+</html>

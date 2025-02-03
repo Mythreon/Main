@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythren</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">Mythren</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><button id="changelogButton" class="changelog-button">📝</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="changelogText" class="changelog-text">
+        <h2 class="changelog-title">3.2.2025</h2> 
+        <p></p>
+        <ul>
+            <li>Initial release of the website</li>
+            <li>Updated layout and style</li>
+            <li>Added new sections (Projects, About)</li>
+        </ul>
+    </div>
+
+    <div class="centered-text-field">
+        <p class="text-field">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+            <br><br>
+            Nulla facilisi. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+        </p>
+    </div>
+
+    <div class="centered-text-fielda">
+        <p class="text-fielda">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+            <br><br>
+            Nulla facilisi. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+        </p>
+    </div>
+
+    <script src="mainJs.js"></script>
+    <div class="grid-background"></div>
+    <div class="grid-overlay"></div>
+
+    <script>
+        const changelogButton = document.getElementById('changelogButton');
+        const changelogText = document.getElementById('changelogText');
+
+        changelogButton.addEventListener('click', () => {
+            changelogText.classList.toggle('visible');
+        });
+    </script>
+</body>
+</html>
