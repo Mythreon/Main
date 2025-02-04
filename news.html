@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythren</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">Mythren</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Main</a></li> 
+                <li><a href="news.html">News</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><button id="changelogButton" class="changelog-button">📝</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="changelogText" class="changelog-text">
+        <h2 class="changelog-title">4.2</h2> 
+        <p></p>
+        <ul>
+            <li>Created page</li>
+        </ul>
+    </div>
+    <div class="center-wrapper">
+        <div class="card-container">        
+          <div class="card">
+            <h3 class="card-title">Disclaimer</h3>
+            <p class="card-description">The old newspages will NEVER get changed, no matter what. (Unless this project gets acquired by a big website that has resources for that). That means that the older ones may have oldish UI's, as I'm not upgrading them. It would simply take too much time.</p>
+          </div>
+        </div>
+      </div>
+<!-- Future note, PLEASE PUT THEM BELOW THIS LINE!!!! -->
+      <div class="center-wrapper">
+        <div class="card-container">        
+          <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Image" class="card-image">
+            <h3 class="card-title">4.2 - Started working on the website builder</h3>
+            <p class="card-description">I started working on the new website builder.</p>
+            <a href=".html" class="card-button">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="mainJs.js"></script>
+    <div class="grid-background"></div>
+    <div class="grid-overlay"></div>
+
+    <script>
+        const changelogButton = document.getElementById('changelogButton');
+        const changelogText = document.getElementById('changelogText');
+
+        changelogButton.addEventListener('click', () => {
+            changelogText.classList.toggle('visible');
+        });
+    </script>
+</body>
+</html>
