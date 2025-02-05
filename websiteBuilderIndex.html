@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom HTML Page Generator</title>
+    <link rel="stylesheet" href="stylesheetofthethingy.css">
+</head>
+<body>
+
+<div class="grid-background"></div>
+<div class="grid-overlay"></div>
+
+<header class="main-header">
+    <div class="logo">Mythren</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><button id="changelogButton" class="changelog-button">📝</button></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="changelogText" class="changelog-text">
+    <h2 class="changelog-title">5.2.2025</h2> 
+    <ul>
+        <li>Initial release of the builder!</li>
+        <li>Updated layout and style</li>
+        <li>Added new sections.</li>
+    </ul>
+</div>
+
+<div id="editor">
+    <h1>Custom HTML Page Generator</h1>
+
+    <div id="controls">
+        <label>Page Title:</label>
+        <input type="text" id="pageTitle" placeholder="Enter page title" oninput="updatePreview()"><br>
+
+        <label>Header Text:</label>
+        <input type="text" id="headerText" placeholder="Enter header text" oninput="updatePreview()"><br>
+
+        <label>Paragraph Text:</label>
+        <textarea id="paragraphText" placeholder="Enter paragraph content" oninput="updatePreview()"></textarea><br>
+
+        <div class="color-picker-container">
+            <label for="bgColor">Background Color:</label>
+            <input type="color" id="bgColor" oninput="updatePreview()">
+        </div>
+    
+        <div class="color-picker-container">
+            <label for="textColor">Text Color:</label>
+            <input type="color" id="textColor" oninput="updatePreview()">
+        </div>
+
+        <button onclick="downloadHTML()">Download HTML</button>
+    </div>
+
+    <h2>Live Preview</h2>
+    <iframe id="preview"></iframe>
+
+    <h2>HTML Code</h2>
+    <pre id="htmlCode"></pre>
+</div>
+
+<script src="websiteEditor.js"></script>
+</body>
+</html>
