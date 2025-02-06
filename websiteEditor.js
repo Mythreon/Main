@@ -3,7 +3,14 @@ function updatePreview() {
     let header = document.getElementById("headerText").value || "Welcome!";
     let paragraph = document.getElementById("paragraphText").value || "This is my new page.";
     let bgColor = document.getElementById("bgColor").value || "#000000";
-    let textColor = document.getElementById("textColor").value || "#000000";
+    let headerAlign = document.getElementById("headerAlign").value || "left";
+    let paragraphAlign = document.getElementById("paragraphAlign").value || "left";
+
+    let headerTextColor = document.getElementById("headerTextColor").value || "#ffffff";
+    let paragraphTextColor = document.getElementById("paragraphTextColor").value || "#ffffff";
+
+    let headerStyle = `text-align: ${headerAlign}; color: ${headerTextColor};`;
+    let paragraphStyle = `text-align: ${paragraphAlign}; color: ${paragraphTextColor};`;
 
     let htmlContent = `
         <!DOCTYPE html>
@@ -13,7 +20,20 @@ function updatePreview() {
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>${title}</title>
             <style>
-                body { background-color: ${bgColor}; color: ${textColor}; font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+                body { 
+                    background-color: ${bgColor}; 
+                    color: #ffffff; 
+                    font-family: Arial, sans-serif; 
+                    padding: 50px;
+                    margin: 0;
+                    box-sizing: border-box;
+                }
+                h1 { 
+                    ${headerStyle} 
+                }
+                p { 
+                    ${paragraphStyle} 
+                }
             </style>
         </head>
         <body>
@@ -38,7 +58,11 @@ function downloadHTML() {
     let header = document.getElementById("headerText").value || "Welcome!";
     let paragraph = document.getElementById("paragraphText").value || "This is my new page.";
     let bgColor = document.getElementById("bgColor").value || "#000000";
-    let textColor = document.getElementById("textColor").value || "#000000";
+    let headerAlign = document.getElementById("headerAlign").value || "left";
+    let paragraphAlign = document.getElementById("paragraphAlign").value || "left";
+
+    let headerTextColor = document.getElementById("headerTextColor").value || "#ffffff";
+    let paragraphTextColor = document.getElementById("paragraphTextColor").value || "#ffffff";
 
     let htmlContent = `
         <!DOCTYPE html>
@@ -48,7 +72,22 @@ function downloadHTML() {
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>${title}</title>
             <style>
-                body { background-color: ${bgColor}; color: ${textColor}; font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+                body { 
+                    background-color: ${bgColor}; 
+                    color: #ffffff; 
+                    font-family: Arial, sans-serif; 
+                    padding: 50px;
+                    margin: 0;
+                    box-sizing: border-box;
+                }
+                h1 { 
+                    text-align: ${headerAlign}; 
+                    color: ${headerTextColor};
+                }
+                p { 
+                    text-align: ${paragraphAlign}; 
+                    color: ${paragraphTextColor};
+                }
             </style>
         </head>
         <body>
@@ -61,7 +100,7 @@ function downloadHTML() {
     let blob = new Blob([htmlContent], { type: "text/html" });
     let a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
-    a.download = "my_website.html";
+    a.download = "generated_website.html";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -71,9 +110,3 @@ document.addEventListener('DOMContentLoaded', function() {
     updatePreview();
 });
 
-const changelogButton = document.getElementById('changelogButton');
-const changelogText = document.getElementById('changelogText');
-
-changelogButton.addEventListener('click', () => {
-    changelogText.classList.toggle('visible');
-});
