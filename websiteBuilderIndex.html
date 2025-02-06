@@ -43,8 +43,22 @@
         <label>Header Text:</label>
         <input type="text" id="headerText" placeholder="Enter header text" oninput="updatePreview()"><br>
 
+        <label for="headerAlign">Header Alignment:</label>
+        <select id="headerAlign" oninput="updatePreview()">
+            <option value="left">Left</option>
+            <option value="center">Center</option>
+            <option value="right">Right</option>
+        </select><br>
+
         <label>Paragraph Text:</label>
         <textarea id="paragraphText" placeholder="Enter paragraph content" oninput="updatePreview()"></textarea><br>
+        
+        <label for="paragraphAlign">Paragraph Alignment:</label>
+        <select id="paragraphAlign" oninput="updatePreview()">
+            <option value="left">Left</option>
+            <option value="center">Center</option>
+            <option value="right">Right</option>
+        </select><br>
 
         <div class="color-picker-container">
             <label for="bgColor">Background Color:</label>
@@ -52,8 +66,13 @@
         </div>
     
         <div class="color-picker-container">
-            <label for="textColor">Text Color:</label>
-            <input type="color" id="textColor" oninput="updatePreview()">
+            <label for="headerTextColor">Header Text Color:</label>
+            <input type="color" id="headerTextColor" oninput="updatePreview()">
+        </div>
+        
+        <div class="color-picker-container">
+            <label for="paragraphTextColor">Paragraph Text Color:</label>
+            <input type="color" id="paragraphTextColor" oninput="updatePreview()">
         </div>
 
         <button onclick="downloadHTML()">Download HTML</button>
@@ -69,3 +88,4 @@
 <script src="websiteEditor.js"></script>
 </body>
 </html>
+
