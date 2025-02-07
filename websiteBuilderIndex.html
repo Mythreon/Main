@@ -25,6 +25,14 @@
 </header>
 
 <div id="changelogText" class="changelog-text">
+    <h2 class="changelog-title">7.2.2025</h2> 
+    <ul>
+        <li>Added customizing backgrounds</li>
+        <li>Added customizing text</li>
+        <li>Fixed preview issues</li>
+        <li>Added some random new features</li>
+        <li>Made the code easier to read for anyone who's curious</li>
+    </ul>
     <h2 class="changelog-title">5.2.2025</h2> 
     <ul>
         <li>Initial release of the builder!</li>
@@ -40,6 +48,9 @@
         <label>Page Title:</label>
         <input type="text" id="pageTitle" placeholder="Enter page title" oninput="updatePreview()"><br>
 
+        <button id="addSectionButton">Add New Section</button>
+        <div id="sectionsContainer"></div>
+        
         <label>Header Text:</label>
         <input type="text" id="headerText" placeholder="Enter header text" oninput="updatePreview()"><br>
 
@@ -61,20 +72,20 @@
         </select><br>
 
         <div class="color-picker-container">
-            <label for="bgColor">Background Color:</label>
+            <label for="bgColor">Background Colour:</label>
             <input type="color" id="bgColor" oninput="updatePreview()">
         </div>
     
         <div class="color-picker-container">
-            <label for="headerTextColor">Header Text Color:</label>
+            <label for="headerTextColor">Header Text Colour:</label>
             <input type="color" id="headerTextColor" oninput="updatePreview()">
         </div>
         
         <div class="color-picker-container">
-            <label for="paragraphTextColor">Paragraph Text Color:</label>
+            <label for="paragraphTextColor">Paragraph Text Colour:</label>
             <input type="color" id="paragraphTextColor" oninput="updatePreview()">
         </div>
-
+        
         <button onclick="downloadHTML()">Download HTML</button>
     </div>
 
@@ -86,6 +97,9 @@
 </div>
 
 <script src="websiteEditor.js"></script>
+<!--- Hey guys! Just to note, if you're copying this code (which you probably are if you're viewing this so far) please don't include this - Mythren. -->
+<!--- Neither should you the changelogs.-->
+<script src="mainJsInstant.js"></script>
 </body>
 </html>
 
