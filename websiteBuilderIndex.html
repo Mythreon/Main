@@ -61,8 +61,15 @@
             <option value="right">Right</option>
         </select><br>
 
+        <label for="headerTextSize">Header Text Size (px)</label>
+        <input type="number" id="headerTextSize" value="36" oninput="updatePreview()">
+
         <label>Paragraph Text:</label>
         <textarea id="paragraphText" placeholder="Enter paragraph content" oninput="updatePreview()"></textarea><br>
+
+        <label for="paragraphTextSize">Paragraph Text Size (px)</label>
+        <input type="number" id="paragraphTextSize" value="16" oninput="updatePreview()">
+
         
         <label for="paragraphAlign">Paragraph Alignment:</label>
         <select id="paragraphAlign" oninput="updatePreview()">
@@ -70,6 +77,27 @@
             <option value="center">Center</option>
             <option value="right">Right</option>
         </select><br>
+
+<label for="headerFontSelect">Select Header Font:</label>
+<select id="headerFontSelect" oninput="updatePreview()">
+    <option value="Arial, sans-serif">Arial</option>
+    <option value="'Courier New', Courier, monospace">Courier New</option>
+    <option value="Georgia, serif">Georgia</option>
+    <option value="'Times New Roman', Times, serif">Times New Roman</option>
+    <option value="Verdana, Geneva, sans-serif">Verdana</option>
+    <option value="'Open Sans', sans-serif">Open Sans</option>
+</select>
+
+<label for="paragraphFontSelect">Select Paragraph Font:</label>
+<select id="paragraphFontSelect" oninput="updatePreview()">
+    <option value="Arial, sans-serif">Arial</option>
+    <option value="'Courier New', Courier, monospace">Courier New</option>
+    <option value="Georgia, serif">Georgia</option>
+    <option value="'Times New Roman', Times, serif">Times New Roman</option>
+    <option value="Verdana, Geneva, sans-serif">Verdana</option>
+    <option value="'Open Sans', sans-serif">Open Sans</option> 
+</select>
+
 
         <div class="color-picker-container">
             <label for="bgColor">Background Colour:</label>
@@ -102,4 +130,3 @@
 <script src="mainJsInstant.js"></script>
 </body>
 </html>
-
