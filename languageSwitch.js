@@ -6,3 +6,5 @@
                 element.textContent = translatedText;
             });
         }
+
+// Important note! This will take a few weeks to implement on itself fully due to everything that I need to learn.
