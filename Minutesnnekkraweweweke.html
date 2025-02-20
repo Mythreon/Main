@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythreon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="italianSnakeBitMe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="grid-background"></div>
+    <div class="grid-overlay"></div>
+
+    <header class="main-header">
+        <div class="logo">Mythreon</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="news.html">News</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><button id="changelogButton" class="changelog-button">📝</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="changelogText" class="changelog-text">
+        <h2 class="changelog-title">20.2.2025</h2> 
+        <p></p>
+        <ul>
+            <li>Snake game created in a hour.</li>
+        </ul>
+    </div>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="500" height="500"></canvas>
+      </div>
+    
+      <div id="startMenu" class="start-menu">
+        <h1>Snake Game</h1>
+        <p>Highest Score: <span id="highScore">0</span></p>
+        <button id="playButton">Play</button>
+    </div>
+
+
+    <script src="snakeGameThree.js"></script>
+
+    <script>
+        const changelogButton = document.getElementById('changelogButton');
+        const changelogText = document.getElementById('changelogText');
+
+        const playButton = document.getElementById('playButton');
+        const startMenu = document.getElementById('startMenu');
+        const gameContainer = document.getElementById('game-container');
+        const highScoreDisplay = document.getElementById('highScore');
+
+        let highScore = localStorage.getItem('highScore') || 0;
+        highScoreDisplay.textContent = highScore;
+
+        changelogButton.addEventListener('click', () => {
+            changelogText.classList.toggle('visible');
+        });
+
+        playButton.addEventListener('click', startGame);
+
+        function startGame() {
+            startMenu.style.display = 'none'; 
+            gameContainer.style.display = 'block'; 
+            resetGame();
+            updateGame();
+        }
+
+    </script>
+</body>
+</html>
