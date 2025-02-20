@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythreon</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">Mythreon</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="news.html">News</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><button id="changelogButton" class="changelog-button">📝</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="changelogText" class="changelog-text">
+        <h2 class="changelog-title">20.2.2025</h2> 
+        <p></p>
+        <ul>
+            <li>Created everything that needs to be in this place, forever.</li>
+        </ul>
+    </div>
+
+    <div class="center-wrapper">
+        <div class="card-container">        
+          <div class="card">
+            <h3 class="card-title">1, 15 and 60 minute snake games.</h3>
+            <p class="card-description">Hello guys! I got bored so I decided to make 3 seperate snake games. Check them out down below!</p>
+            <a href="Minutesnnekkrake.html" class="card-button">1 Minute</a>
+            <a href="Minutesnnekkrwerake.html" class="card-button">15 Minutes</a>
+            <a href="Minutesnnekkraweweweke.html" class="card-button">1 Hour</a>
+          </div>
+        </div>
+      </div>
+      
+
+    <script src="mainJs.js"></script>
+    <div class="grid-background"></div>
+    <div class="grid-overlay"></div>
+
+    <script>
+        const changelogButton = document.getElementById('changelogButton');
+        const changelogText = document.getElementById('changelogText');
+
+        changelogButton.addEventListener('click', () => {
+            changelogText.classList.toggle('visible');
+        });
+    </script>
+</body>
+</html>
