@@ -181,31 +181,28 @@ function spawnFood() {
 }
 
 function endGame() {
-    updateHighScore();  // Update the high score
-    gameContainer.style.display = 'none';  // Hide the game canvas
-    startMenu.style.display = 'flex';  // Show the start menu
+    updateHighScore();  
+    gameContainer.style.display = 'none';  
+    startMenu.style.display = 'flex';  
 
-    // Show "Game Over" with animation
     const gameOverText = startMenu.querySelector('h1');
     gameOverText.textContent = 'Game Over!';
-    gameOverText.style.animation = 'popUp 1s ease-out forwards'; // Add animation
+    gameOverText.style.animation = 'popUp 1s ease-out forwards'; 
 
-    // Always show the Doom button if score is 50 or more
     if (score >= 50 && !showDoomButton) {
         showDoomButton = true;
         const doomButton = document.createElement('button');
         doomButton.textContent = 'Play Doom!';
         doomButton.id = 'doomButton';
-        doomButton.style.display = 'block'; // Make button visible
+        doomButton.style.display = 'block'; 
         doomButton.addEventListener('click', startDoom);
         startMenu.appendChild(doomButton);
     }
 }
 
-// Start Doom when the button is clicked
+// Don't.
 function startDoom() {
-    // Open the Doom game website in a new tab
-    window.open('https://yourdoomgameurl.com', '_blank'); // Replace with your actual URL
+    window.open('https://Mythreon.github.io/Main/doom.html', '/Main/doom.html');
 }
 
 // Detect touch events for mobile control
