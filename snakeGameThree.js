@@ -42,12 +42,14 @@ const gridSize = 20; // Snake and food size
 const canvasSize = 500; // Canvas size
 const gameSpeed = 15; // Milliseconds between each game update
 
-let snake = [{ x: 160, y: 160 }]; // Snake's initial position
-let food = { x: 200, y: 200 }; // Food position
-let direction = "RIGHT"; // Snake's movement direction
-let score = 0; // Score count
+let snake = [{ x: 160, y: 160 }]; 
+let food = { x: 200, y: 200 }; 
+let direction = "RIGHT"; 
+let score = 0; 
 
-// Control keys (W, A, S, D and arrow keys)
+const foodImage = new Image();
+foodImage.src = 'https://raw.githubusercontent.com/Mythreon/Main/8a6eea146a1f3a64838c9b0666d253b0817c39c3/omena.png';
+
 const controls = {
   ArrowUp: "UP",
   ArrowDown: "DOWN",
@@ -94,7 +96,6 @@ function updateGame() {
 function moveSnake() {
     let head = { ...snake[0] };
 
-    // Moving in smaller increments (0.1 grid per update)
     if (direction === "UP") head.y -= 0.1 * gridSize; 
     if (direction === "DOWN") head.y += 0.1 * gridSize; 
     if (direction === "LEFT") head.x -= 0.1 * gridSize; 
@@ -108,7 +109,6 @@ function moveSnake() {
         snake.pop();
     }
 }
-
 
 // Check if the snake collides with itself or the wall
 function checkCollision() {
@@ -129,39 +129,43 @@ function checkCollision() {
 // Check if the snake eats food
 function checkFoodCollision() {
   const head = snake[0];
-  if (head.x === food.x && head.y === food.y) {
+  const foodThreshold = gridSize / 2; 
+
+  if (Math.abs(head.x - food.x) < foodThreshold && Math.abs(head.y - food.y) < foodThreshold) {
+    score += 1;
+    spawnFood();
+    spawnParticles(food.x, food.y);  
+
+    for (let i = 0; i < 5; i++) {
+        snake.push({ ...snake[snake.length - 1] }); 
+    }
+
     return true;
   }
   return false;
 }
 
 // Draw the game on the canvas
-// Draw the game on the canvas
 function drawGame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas
     
     // Draw snake with rounded corners
     ctx.fillStyle = "linear-gradient(to bottom, #32CD32, #228B22)"; // Gradient color for snake
-    snake.forEach((segment, index) => {
+    snake.forEach((segment) => {
         ctx.beginPath();
         ctx.arc(segment.x + gridSize / 2, segment.y + gridSize / 2, gridSize / 2, 0, Math.PI * 2);
         ctx.fill();
         ctx.closePath();
     });
 
-    // Draw food with glow effect
-    ctx.fillStyle = "red"; // Classic red food
-    ctx.shadowBlur = 10; // Add glow effect around food
-    ctx.shadowColor = "yellow";
-    ctx.fillRect(food.x, food.y, gridSize, gridSize);
-    ctx.shadowBlur = 0; // Reset shadow after food drawing
+    // Draw food as image
+    ctx.drawImage(foodImage, food.x, food.y, gridSize, gridSize); 
 
     // Draw score with custom font style
     ctx.fillStyle = "white";
     ctx.font = "24px 'Courier New', monospace";
     ctx.fillText("Score: " + score, 10, 30);
 }
-
 
 // Spawn a new food at a random position
 function spawnFood() {
@@ -181,8 +185,6 @@ function endGame() {
     gameOverText.textContent = 'Game Over!';
     gameOverText.style.animation = 'popUp 1s ease-out forwards'; // Add animation
 }
-
-
 
 // Detect touch events for mobile control
 let touchStartX = 0;
@@ -264,25 +266,6 @@ function updateParticles() {
     });
 }
 
-function checkFoodCollision() {
-    const head = snake[0];
-    const foodThreshold = gridSize / 2; 
-
-    if (Math.abs(head.x - food.x) < foodThreshold && Math.abs(head.y - food.y) < foodThreshold) {
-        score += 1;
-        spawnFood();
-        spawnParticles(food.x, food.y);  
-
-        for (let i = 0; i < 5; i++) {
-            snake.push({ ...snake[snake.length - 1] }); 
-        }
-
-        return true;
-    }
-    return false;
-}
-
-// Update the game to include particles
 function updateGame() {
     moveSnake();
     if (checkCollision()) {
@@ -293,8 +276,6 @@ function updateGame() {
     drawGame();
     setTimeout(updateGame, gameSpeed);
 }
-
-
 
 // Start the game
 spawnFood();
