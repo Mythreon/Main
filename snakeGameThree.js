@@ -10,6 +10,8 @@ highScoreDisplay.textContent = highScore;
 
 playButton.addEventListener('click', startGame);
 
+let showDoomButton = false; // Flag to show Doom button
+
 function startGame() {
     startMenu.style.display = 'none'; // Hide the start menu
     gameContainer.style.display = 'block'; // Show the game canvas
@@ -42,14 +44,16 @@ const gridSize = 20; // Snake and food size
 const canvasSize = 500; // Canvas size
 const gameSpeed = 15; // Milliseconds between each game update
 
-let snake = [{ x: 160, y: 160 }]; 
-let food = { x: 200, y: 200 }; 
-let direction = "RIGHT"; 
-let score = 0; 
+let snake = [{ x: 160, y: 160 }]; // Snake's initial position
+let food = { x: 200, y: 200 }; // Food position
+let direction = "RIGHT"; // Snake's movement direction
+let score = 0; // Score count
 
+// Load the food image
 const foodImage = new Image();
-foodImage.src = 'https://raw.githubusercontent.com/Mythreon/Main/8a6eea146a1f3a64838c9b0666d253b0817c39c3/omena.png';
+foodImage.src = 'https://raw.githubusercontent.com/Mythreon/Main/8a6eea146a1f3a64838c9b0666d253b0817c39c3/omena.png'; // Path to your image
 
+// Control keys (W, A, S, D and arrow keys)
 const controls = {
   ArrowUp: "UP",
   ArrowDown: "DOWN",
@@ -96,6 +100,7 @@ function updateGame() {
 function moveSnake() {
     let head = { ...snake[0] };
 
+    // Moving in smaller increments (0.1 grid per update)
     if (direction === "UP") head.y -= 0.1 * gridSize; 
     if (direction === "DOWN") head.y += 0.1 * gridSize; 
     if (direction === "LEFT") head.x -= 0.1 * gridSize; 
@@ -159,7 +164,7 @@ function drawGame() {
     });
 
     // Draw food as image
-    ctx.drawImage(foodImage, food.x, food.y, gridSize, gridSize); 
+    ctx.drawImage(foodImage, food.x, food.y, gridSize, gridSize); // Draw the food image
 
     // Draw score with custom font style
     ctx.fillStyle = "white";
@@ -184,6 +189,23 @@ function endGame() {
     const gameOverText = startMenu.querySelector('h1');
     gameOverText.textContent = 'Game Over!';
     gameOverText.style.animation = 'popUp 1s ease-out forwards'; // Add animation
+
+    // Always show the Doom button if score is 50 or more
+    if (score >= 50 && !showDoomButton) {
+        showDoomButton = true;
+        const doomButton = document.createElement('button');
+        doomButton.textContent = 'Play Doom!';
+        doomButton.id = 'doomButton';
+        doomButton.style.display = 'block'; // Make button visible
+        doomButton.addEventListener('click', startDoom);
+        startMenu.appendChild(doomButton);
+    }
+}
+
+// Start Doom when the button is clicked
+function startDoom() {
+    // Open the Doom game website in a new tab
+    window.open('https://yourdoomgameurl.com', '_blank'); // Replace with your actual URL
 }
 
 // Detect touch events for mobile control
@@ -272,7 +294,7 @@ function updateGame() {
         endGame();
         return;
     }
-    updateParticles(); // Update particles
+    updateParticles(); 
     drawGame();
     setTimeout(updateGame, gameSpeed);
 }
