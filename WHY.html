@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythreon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatBot.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+    </header>
+
+    <div id="changelogText" class="changelog-text">
+        <h2 class="changelog-title">53542156435351962359615676453456771111423454678790+987465467436712341111157411111111111111111111111111111111111111111109468439683468943849664869340568973985775</h2> 
+        <p></p>
+        <ul>
+            <li>I told you only not to come here.</li>
+        </ul>
+    </div>
+    <div id="chatbox"></div>
+    <div id="chat-options"></div>
+    <div class="alarmed-mode-overlay"></div>
+    <script src="mainJs.js"></script>
+    <script src="chatBot.js"></script>
+    <div class="grid-background"></div>
+    <div class="grid-overlay"></div>
+
+    <script>
+        const changelogButton = document.getElementById('changelogButton');
+        const changelogText = document.getElementById('changelogText');
+
+        changelogButton.addEventListener('click', () => {
+            changelogText.classList.toggle('visible');
+        });
+    </script>
+</body>
+</html>
