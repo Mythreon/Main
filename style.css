@@ -356,3 +356,37 @@ code {
 .dropdown-section a:hover {
     background-color: #00b3b3; 
 }
+
+#logo {
+    font-size: 2rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#logo.broken {
+    animation: breakAnimation 2s forwards;
+}
+
+@keyframes breakAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    20% {
+        transform: scale(1.2);
+    }
+    40% {
+        transform: rotate(30deg);
+    }
+    60% {
+        transform: rotate(-30deg);
+    }
+    80% {
+        transform: scale(0.5);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
