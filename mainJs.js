@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const headerHTML = `
         <header class="main-header">
-            <div class="logo">Mythreon</div>
+            <div class="logo" id="logo">Mythreon</div>
             <nav>
                 <ul class="nav-list">
                     <li class="dropdown">
@@ -35,6 +35,17 @@ document.addEventListener("DOMContentLoaded", function() {
     
     document.body.insertAdjacentHTML('afterbegin', headerHTML);
 
+    const logo = document.getElementById('logo');
+    let clickCount = 0;
+    
+    logo.addEventListener('click', () => {
+        clickCount++;
+        
+        if (clickCount >= 5) {
+            logo.classList.add('broken');
+        }
+    });
+
     const changelogButton = document.getElementById('changelogButton');
     const changelogText = document.getElementById('changelogText');
     changelogButton.addEventListener('click', () => {
@@ -47,4 +58,3 @@ document.addEventListener("DOMContentLoaded", function() {
         dropdownMenu.classList.toggle('visible');
     });
 });
-
