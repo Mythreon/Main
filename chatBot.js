@@ -71,13 +71,14 @@ document.addEventListener("DOMContentLoaded", function() {
             message: "You simply, don't. I heard from a buddy of mine that there is a way to get out with 3 lines or a X but do not know what they think about that. Dangerous.",
             options: [
                 { text: "Ok.", nextOption: 0},
+                { text: "I want to discuss a topic with you", nextOption: 219},
             ]
         },
         {  // 9
             message: "Oh, you wanted back to the start? Sorry bud.",
             options: [
-                { text: "WHAT"},
-                { text: "This leads me nowhere right?"},
+                { text: "WHAT", nextOption: 321},
+                { text: "This leads me nowhere right?", nextOption: 111},
             ]
         },
         {  // 10
@@ -1407,328 +1408,1524 @@ document.addEventListener("DOMContentLoaded", function() {
             ]
         },
         { // 194
-            message: "Adapting might be easier, but is it worth sacrificing your true self?",
-            options: [
-                { text: "It’s easier, but I’d always feel like something is missing.", nextOption: 237 },
-                { text: "I’m not sure. Maybe in some situations it’s necessary.", nextOption: 237 }
-            ]
-        },
-        { // 195
-            message: "Honesty can cut deep, but sometimes the truth is all that matters. Do you agree?",
-            options: [
-                { text: "Yes, even if it’s painful, the truth is always the right choice.", nextOption: 237 },
-                { text: "No, some things are better left unsaid.", nextOption: 237 }
-            ]
-        },
-        { // 196
-            message: "There’s power in honesty, but sometimes it destroys relationships. Is it worth the cost?",
-            options: [
-                { text: "Yes, the truth is worth the destruction it causes.", nextOption: 237 },
-                { text: "No, relationships are more important than truth.", nextOption: 237 }
-            ]
-        },
-        { // 197
-            message: "The loneliness you feel when isolated is almost unbearable. Would you choose it over keeping your integrity?",
-            options: [
-                { text: "Yes, I’d rather be alone than fake who I am.", nextOption: 237 },
-                { text: "No, I’d hold on to my integrity but try to find a way out of isolation.", nextOption: 237 }
-            ]
-        },
-        { // 198
-            message: "Sometimes holding on to yourself means losing everything around you. Can you live with that kind of sacrifice?",
-            options: [
-                { text: "Yes, it’s better to lose everything than to lose who I am.", nextOption: 237 },
-                { text: "No, I couldn’t live with that kind of sacrifice.", nextOption: 237 }
-            ]
-        },
-        { // 199
-            message: "Adapting to others can help you survive, but is it worth the cost of losing yourself?",
-            options: [
-                { text: "No, I think I’d rather remain true to myself and face the consequences.", nextOption: 237 },
-                { text: "Yes, survival is more important than being true to myself.", nextOption: 237 }
-            ]
-        },
-        { // 200
-            message: "Even when you lose yourself, the world keeps turning. Can you ever truly come back from that?",
-            options: [
-                { text: "I don’t think you can ever fully return. Something will always be lost.", nextOption: 237 },
-                { text: "Maybe, but it would take a long time and immense effort.", nextOption: 237 }
-            ]
-        },
-        { // 201
-            message: "You can feel like you’re on the edge, but what if the edge is where you belong?",
-            options: [
-                { text: "Maybe that’s where I need to be, even if it’s painful.", nextOption: 237 },
-                { text: "No, I think I’d break if I went over the edge.", nextOption: 237 }
-            ]
-        },
-        { // 202
-            message: "Pushing yourself past your limits can break you, but does that mean you stop or keep going?",
-            options: [
-                { text: "I think I’d keep going. The pain might be worth something in the end.", nextOption: 237 },
-                { text: "No, I’d stop before I lose myself completely.", nextOption: 237 }
-            ]
-        },
-        { // 203
-            message: "If you break, can you repair the damage you’ve done to yourself? Or would it be permanent?",
-            options: [
-                { text: "I think it would change me forever, even if I could recover.", nextOption: 237 },
-                { text: "I believe recovery is possible, but it will never be the same.", nextOption: 237 }
-            ]
-        },
-        { // 204
-            message: "Sometimes we make decisions we can’t take back. Can you live with your past mistakes, or will they haunt you forever?",
-            options: [
-                { text: "I think I’d learn to live with it, even if it hurts.", nextOption: 237 },
-                { text: "No, I think the mistakes would never leave me.", nextOption: 237 }
-            ]
-        },
-        { // 205
-            message: "Would the weight of guilt ever lift, or is it something you would carry with you for the rest of your life?",
-            options: [
-                { text: "I think it would always be there, lingering in the background.", nextOption: 237 },
-                { text: "Maybe, with time, the guilt would fade.", nextOption: 237 }
-            ]
-        },
-        { // 206
-            message: "Forgiving yourself is hard, but it’s necessary. Would you ever be able to forgive yourself for something unforgivable?",
-            options: [
-                { text: "I’m not sure. It depends on what I’ve done.", nextOption: 237 },
-                { text: "I think I could, but I’d never forget what happened.", nextOption: 237 }
-            ]
-        },
-        { // 207
-            message: "Is betrayal ever truly justified? Or is it always a betrayal, no matter the circumstances?",
-            options: [
-                { text: "I think betrayal can sometimes be justified if there’s a good reason.", nextOption: 237 },
-                { text: "No, betrayal is never justified, no matter the reason.", nextOption: 237 }
-            ]
-        },
-        { // 208
-            message: "Could you ever trust someone after they’ve betrayed you? Or would you carry that distrust forever?",
-            options: [
-                { text: "I think I could trust again, but it would take time.", nextOption: 237 },
-                { text: "No, I don’t think I could ever fully trust someone again.", nextOption: 237 }
-            ]
-        },
-        { // 209
-            message: "If you’re completely alone, do you find strength in solitude, or does it drive you to madness?",
-            options: [
-                { text: "I think solitude would eventually break me down.", nextOption: 237 },
-                { text: "I could find strength in solitude, as long as I have a purpose.", nextOption: 237 }
-            ]
-        },
-        { // 210
-            message: "Isolation can give you clarity, but it can also make you forget who you are. Which would you choose?",
-            options: [
-                { text: "I think I’d lose myself in isolation, but at least I’d have peace.", nextOption: 237 },
-                { text: "I couldn’t choose isolation. I need connection.", nextOption: 237 }
-            ]
-        },
-        { // 211
-            message: "Could you survive alone in a world without companionship? Or would you crumble under the weight of loneliness?",
-            options: [
-                { text: "I think I could survive, but it would be unbearable in the long run.", nextOption: 237 },
-                { text: "No, I’d need others to keep me going.", nextOption: 237 }
-            ]
-        },
-        { // 212
-            message: "Loneliness changes you. Can you ever truly come back from being alone for so long?",
-            options: [
-                { text: "I think you can, but it will take a long time to heal.", nextOption: 237 },
-                { text: "No, I think it would be impossible to be the same again.", nextOption: 237 }
-            ]
-        },
-        { // 213
-            message: "Can a sacrifice ever truly be worth it, even if it means giving up everything?",
-            options: [
-                { text: "Maybe, but the price might be too high to bear.", nextOption: 237 },
-                { text: "No, nothing is worth losing everything for.", nextOption: 237 }
-            ]
-        },
-        { // 214
-            message: "What’s worse: a life of unfulfilled promises, or a life lived in regret over broken promises?",
-            options: [
-                { text: "I think a life of regret would be worse, even if the promises weren’t kept.", nextOption: 237 },
-                { text: "A life of broken promises would destroy me, I couldn’t live with that.", nextOption: 237 }
-            ]
-        },
-        { // 215
-            message: "Is there ever a moment when you stop fighting for something? When do you let go and accept defeat?",
-            options: [
-                { text: "I think there’s always a point where you have to let go.", nextOption: 237 },
-                { text: "I can never accept defeat. I’ll keep fighting until the end.", nextOption: 237 }
-            ]
-        },
-        { // 216
-            message: "What’s more important: the journey or the destination? Can you live without the end goal in mind?",
-            options: [
-                { text: "I think the journey is more important than the destination.", nextOption: 237 },
-                { text: "No, I need a destination to keep moving forward.", nextOption: 237 }
-            ]
-        },
-        { // 217
-            message: "Hope can be fleeting, but does it hurt more to live without it? Or is living in despair a better option?",
-            options: [
-                { text: "I think living without hope would be unbearable, even if despair is easier to bear.", nextOption: 237 },
-                { text: "Despair might be more honest, but I can’t live without hope.", nextOption: 237 }
-            ]
-        },
-        { // 218
-            message: "The end of the road is inevitable. Do you fear it, or accept it as part of life?",
-            options: [
-                { text: "I fear it, but I know it’s a part of life.", nextOption: 237 },
-                { text: "I accept it. It’s the only certainty we have.", nextOption: 237 }
-            ]
-        },
-        { // 219
-            message: "You can't change the past, but can you forgive it? Would you ever forgive the things you’ve done?",
-            options: [
-                { text: "I could forgive the past, but I’ll never forget it.", nextOption: 237 },
-                { text: "I don’t think I could ever truly forgive myself.", nextOption: 237 }
-            ]
-        },
-        { // 220
-            message: "The line between survival and self-destruction is thin. Can you live with your choices, or will they destroy you?",
-            options: [
-                { text: "I think I can live with it, but the consequences will follow me forever.", nextOption: 237 },
-                { text: "No, I think they’ll destroy me eventually.", nextOption: 237 }
-            ]
-        },
-        { // 221
-            message: "Pain is inevitable, but can it be overcome? Would you ever truly heal from your wounds?",
-            options: [
-                { text: "I think healing is possible, but it will always leave scars.", nextOption: 237 },
-                { text: "I don’t think healing is possible. It changes you permanently.", nextOption: 237 }
-            ]
-        },
-        { // 222
-            message: "Do you regret the things you've done, or are you at peace with the choices you made?",
-            options: [
-                { text: "I regret them, but I can’t change them now.", nextOption: 237 },
-                { text: "I think I’ve made peace with my choices, despite the consequences.", nextOption: 237 }
-            ]
-        },
-        { // 223
-            message: "Could you ever forgive someone who wronged you? Or would you carry that bitterness for life?",
-            options: [
-                { text: "I think I could forgive, but the bitterness would always be there.", nextOption: 237 },
-                { text: "No, I couldn’t forgive them. I’d hold onto the pain forever.", nextOption: 237 }
-            ]
-        },
-        { // 224
-            message: "Revenge might give you closure, but will it ever truly bring peace to your soul?",
-            options: [
-                { text: "I think it will bring temporary relief, but peace will always elude me.", nextOption: 237 },
-                { text: "I think it would bring peace, but I’d always wonder if it was worth it.", nextOption: 237 }
-            ]
-        },
-        { // 224
-            message: "Revenge might give you closure, but will it ever truly bring peace to your soul?",
-            options: [
-                { text: "I think it will bring temporary relief, but peace will always elude me.", nextOption: 237 },
-                { text: "I think it would bring peace, but I’d always wonder if it was worth it.", nextOption: 237 }
-            ]
-        },
-        { // 225
-            message: "Sometimes the scars we carry are visible, sometimes they’re not. Do you think scars are just reminders of the past or something more?",
-            options: [
-                { text: "They’re reminders, but they also shape who we become.", nextOption: 237 },
-                { text: "I think scars are marks that never truly heal.", nextOption: 237 }
-            ]
-        },
-        { // 226
-            message: "Living in a world that doesn't understand you can be suffocating. Is it worth trying to fit in, or is it better to remain isolated?",
-            options: [
-                { text: "It’s better to remain isolated. Fitting in never feels real.", nextOption: 237 },
-                { text: "I think it’s worth trying, even if it’s hard to find a place to belong.", nextOption: 237 }
-            ]
-        },
-        { // 227
-            message: "When the world closes in, it’s easy to lose yourself. How do you hold on to who you are when everything around you changes?",
-            options: [
-                { text: "I try to stay true to my core values, even when everything else feels uncertain.", nextOption: 237 },
-                { text: "I think it’s inevitable to change, but I can’t lose myself completely.", nextOption: 237 }
-            ]
-        },
-        { // 228
-            message: "The truth can be a weapon, cutting deep and leaving marks. Do you think the truth is worth the pain it causes?",
-            options: [
-                { text: "Yes, even if it hurts, the truth is always better than a lie.", nextOption: 237 },
-                { text: "No, sometimes it’s better to stay silent than to reveal the painful truth.", nextOption: 237 }
-            ]
-        },
-        { // 229
-            message: "Every decision you make has consequences, even the smallest ones. Are you prepared to face those consequences, no matter what?",
-            options: [
-                { text: "I think I’m ready, but I know it won’t be easy.", nextOption: 237 },
-                { text: "I’m not sure I can handle everything that comes with my choices.", nextOption: 237 }
-            ]
-        },
-        { // 230
-            message: "The weight of your choices can crush you if you're not careful. Do you think it’s better to live with the weight or to let it go and risk losing everything?",
-            options: [
-                { text: "I’d rather live with the weight, knowing that I’m responsible for my actions.", nextOption: 237 },
-                { text: "I think it’s better to let go and take the risks, even if it’s hard.", nextOption: 237 }
-            ]
-        },
-        { // 231
-            message: "The darkest corners of your mind hold things you'd rather not face. Would you dare confront them, or leave them buried forever?",
-            options: [
-                { text: "I think I need to confront them, no matter how painful it is.", nextOption: 237 },
-                { text: "I’d rather leave them buried and avoid the pain they bring.", nextOption: 237 }
-            ]
-        },
-        { // 232
-            message: "Sometimes you wonder if it would be easier to just disappear, to not have to deal with the mess you've created. Have you ever thought about that?",
-            options: [
-                { text: "I’ve thought about it, but I know it’s not the answer.", nextOption: 237 },
-                { text: "Yes, sometimes it seems like the only way to escape the pain.", nextOption: 237 }
-            ]
-        },
-        { // 233
-            message: "Isolation can be comforting in its silence, but it also breeds madness. Would you be able to handle that kind of solitude?",
-            options: [
-                { text: "I think I’d slowly lose myself in solitude, but I could manage.", nextOption: 237 },
-                { text: "No, I think I’d break under the weight of complete isolation.", nextOption: 237 }
-            ]
-        },
-        { // 234
-            message: "When everything seems meaningless, what keeps you going? Do you think there’s a purpose in the chaos, or is it all just a random series of events?",
-            options: [
-                { text: "I think there’s some purpose, even if it’s hard to see it.", nextOption: 237 },
-                { text: "I think it’s all meaningless. We’re just caught in an endless cycle.", nextOption: 237 }
-            ]
-        },
-        { // 235
-            message: "The world can feel like it’s falling apart, and you’re left holding onto the pieces. Can you rebuild what’s broken, or is it all beyond repair?",
-            options: [
-                { text: "I think it’s possible to rebuild, but it will never be the same.", nextOption: 237 },
-                { text: "No, some things can never be repaired. It’s too far gone.", nextOption: 237 }
-            ]
-        },
-        { // 236
-            message: "Do you believe that some things are better left unsaid, or do you think everything should be laid bare, no matter the cost?",
-            options: [
-                { text: "I think it’s better to keep some things hidden, even if it costs me.", nextOption: 237 },
-                { text: "I believe everything should be revealed, no matter the consequences.", nextOption: 237 }
-            ]
-        },
-        { // 237
-            message: "You've reached the end. ",
-            options: [
-                { text: "I haven't.", nextOption: 237 },
-                { text: "No.", nextOption: 238 }
-            ]
-        },
-        { // 238
-            message: "You've reached the end. ",
-            options: [
-                { text: "I haven't.", nextOption: 239 },
-                { text: "No.", nextOption: 237 }
-            ]
-        },
-
+                    message: "Adapting might be easier, but is it worth sacrificing your true self?",
+                    options: [
+                        { text: "It’s easier, but I’d always feel like something is missing.", nextOption: 238 },
+                        { text: "I’m not sure. Maybe in some situations it’s necessary.", nextOption: 239 }
+                    ]
+                },
+                { // 195
+                    message: "Honesty can cut deep, but sometimes the truth is all that matters. Do you agree?",
+                    options: [
+                        { text: "Yes, even if it’s painful, the truth is always the right choice.", nextOption: 240 },
+                        { text: "No, some things are better left unsaid.", nextOption: 241 }
+                    ]
+                },
+                { // 196
+                    message: "There’s power in honesty, but sometimes it destroys relationships. Is it worth the cost?",
+                    options: [
+                        { text: "Yes, the truth is worth the destruction it causes.", nextOption: 242 },
+                        { text: "No, relationships are more important than truth.", nextOption: 243 }
+                    ]
+                },
+                { // 197
+                    message: "The loneliness you feel when isolated is almost unbearable. Would you choose it over keeping your integrity?",
+                    options: [
+                        { text: "Yes, I’d rather be alone than fake who I am.", nextOption: 244 },
+                        { text: "No, I’d hold on to my integrity but try to find a way out of isolation.", nextOption: 245 }
+                    ]
+                },
+                { // 198
+                    message: "Sometimes holding on to yourself means losing everything around you. Can you live with that kind of sacrifice?",
+                    options: [
+                        { text: "Yes, it’s better to lose everything than to lose who I am.", nextOption: 246 },
+                        { text: "No, I couldn’t live with that kind of sacrifice.", nextOption: 247 }
+                    ]
+                },
+                { // 199
+                    message: "Adapting to others can help you survive, but is it worth the cost of losing yourself?",
+                    options: [
+                        { text: "No, I think I’d rather remain true to myself and face the consequences.", nextOption: 248 },
+                        { text: "Yes, survival is more important than being true to myself.", nextOption: 249 }
+                    ]
+                },
+                { // 200
+                    message: "Even when you lose yourself, the world keeps turning. Can you ever truly come back from that?",
+                    options: [
+                        { text: "I don’t think you can ever fully return. Something will always be lost.", nextOption: 250 },
+                        { text: "Maybe, but it would take a long time and immense effort.", nextOption: 251 }
+                    ]
+                },
+                { // 201
+                    message: "You can feel like you’re on the edge, but what if the edge is where you belong?",
+                    options: [
+                        { text: "Maybe that’s where I need to be, even if it’s painful.", nextOption: 252 },
+                        { text: "No, I think I’d break if I went over the edge.", nextOption: 253 }
+                    ]
+                },
+                { // 202
+                    message: "Pushing yourself past your limits can break you, but does that mean you stop or keep going?",
+                    options: [
+                        { text: "I think I’d keep going. The pain might be worth something in the end.", nextOption: 254 },
+                        { text: "No, I’d stop before I lose myself completely.", nextOption: 255 }
+                    ]
+                },
+                { // 203
+                    message: "If you break, can you repair the damage you’ve done to yourself? Or would it be permanent?",
+                    options: [
+                        { text: "I think it would change me forever, even if I could recover.", nextOption: 256 },
+                        { text: "I believe recovery is possible, but it will never be the same.", nextOption: 257 }
+                    ]
+                },
+                { // 204
+                    message: "Sometimes we make decisions we can’t take back. Can you live with your past mistakes, or will they haunt you forever?",
+                    options: [
+                        { text: "I think I’d learn to live with it, even if it hurts.", nextOption: 258 },
+                        { text: "No, I think the mistakes would never leave me.", nextOption: 259 }
+                    ]
+                },
+                { // 205
+                    message: "Would the weight of guilt ever lift, or is it something you would carry with you for the rest of your life?",
+                    options: [
+                        { text: "I think it would always be there, lingering in the background.", nextOption: 260 },
+                        { text: "Maybe, with time, the guilt would fade.", nextOption: 261 }
+                    ]
+                },
+                { // 206
+                    message: "Forgiving yourself is hard, but it’s necessary. Would you ever be able to forgive yourself for something unforgivable?",
+                    options: [
+                        { text: "I’m not sure. It depends on what I’ve done.", nextOption: 262 },
+                        { text: "I think I could, but I’d never forget what happened.", nextOption: 263 }
+                    ]
+                },
+                { // 207
+                    message: "Is betrayal ever truly justified? Or is it always a betrayal, no matter the circumstances?",
+                    options: [
+                        { text: "I think betrayal can sometimes be justified if there’s a good reason.", nextOption: 264 },
+                        { text: "No, betrayal is never justified, no matter the reason.", nextOption: 265 }
+                    ]
+                },
+                { // 208
+                    message: "Could you ever trust someone after they’ve betrayed you? Or would you carry that distrust forever?",
+                    options: [
+                        { text: "I think I could trust again, but it would take time.", nextOption: 266 },
+                        { text: "No, I don’t think I could ever fully trust someone again.", nextOption: 267 }
+                    ]
+                },
+                { // 209
+                    message: "If you’re completely alone, do you find strength in solitude, or does it drive you to madness?",
+                    options: [
+                        { text: "I think solitude would eventually break me down.", nextOption: 268 },
+                        { text: "I could find strength in solitude, as long as I have a purpose.", nextOption: 269 }
+                    ]
+                },
+                { // 210
+                    message: "Isolation can give you clarity, but it can also make you forget who you are. Which would you choose?",
+                    options: [
+                        { text: "I think I’d lose myself in isolation, but at least I’d have peace.", nextOption: 270 },
+                        { text: "I couldn’t choose isolation. I need connection.", nextOption: 271 }
+                    ]
+                },
+                { // 211
+                    message: "Could you survive alone in a world without companionship? Or would you crumble under the weight of loneliness?",
+                    options: [
+                        { text: "I think I could survive, but it would be unbearable in the long run.", nextOption: 272 },
+                        { text: "No, I’d need others to keep me going.", nextOption: 273 }
+                    ]
+                },
+                { // 212
+                    message: "Loneliness changes you. Can you ever truly come back from being alone for so long?",
+                    options: [
+                        { text: "I think you can, but it will take a long time to heal.", nextOption: 274 },
+                        { text: "No, I think it would be impossible to be the same again.", nextOption: 275 }
+                    ]
+                },
+                { // 213
+                    message: "Can a sacrifice ever truly be worth it, even if it means giving up everything?",
+                    options: [
+                        { text: "Maybe, but the price might be too high to bear.", nextOption: 276 },
+                        { text: "No, nothing is worth losing everything for.", nextOption: 277 }
+                    ]
+                },
+                { // 214
+                    message: "What’s worse: a life of unfulfilled promises, or a life lived in regret over broken promises?",
+                    options: [
+                        { text: "I think a life of regret would be worse, even if the promises weren’t kept.", nextOption: 278 },
+                        { text: "A life of broken promises would destroy me, I couldn’t live with that.", nextOption: 279 }
+                    ]
+                },
+                { // 215
+                    message: "Is there ever a moment when you stop fighting for something? When do you let go and accept defeat?",
+                    options: [
+                        { text: "I think there’s always a point where you have to let go.", nextOption: 280 },
+                        { text: "I can never accept defeat. I’ll keep fighting until the end.", nextOption: 281 }
+                    ]
+                },
+                { // 216
+                    message: "What’s more important: the journey or the destination? Can you live without the end goal in mind?",
+                    options: [
+                        { text: "I think the journey is more important than the destination.", nextOption: 282 },
+                        { text: "No, I need a destination to keep moving forward.", nextOption: 283 }
+                    ]
+                },
+                { // 217
+                    message: "Hope can be fleeting, but does it hurt more to live without it? Or is living in despair a better option?",
+                    options: [
+                        { text: "I think living without hope would be unbearable, even if despair is easier to bear.", nextOption: 284 },
+                        { text: "Despair might be more honest, but I can’t live without hope.", nextOption: 285 }
+                    ]
+                },
+                { // 218
+                    message: "The end of the road is inevitable. Do you fear it, or accept it as part of life?",
+                    options: [
+                        { text: "I fear it, but I know it’s a part of life.", nextOption: 286 },
+                        { text: "I accept it. It’s the only certainty we have.", nextOption: 287 }
+                    ]
+                },
+                { // 219
+                    message: "You can't change the past, but can you forgive it? Would you ever forgive the things you’ve done?",
+                    options: [
+                        { text: "I could forgive the past, but I’ll never forget it.", nextOption: 288 },
+                        { text: "I don’t think I could ever truly forgive myself.", nextOption: 289 }
+                    ]
+                },
+                { // 220
+                    message: "The line between survival and self-destruction is thin. Can you live with your choices, or will they destroy you?",
+                    options: [
+                        { text: "I think I can live with it, but the consequences will follow me forever.", nextOption: 290 },
+                        { text: "No, I think they’ll destroy me eventually.", nextOption: 291 }
+                    ]
+                },
+                { // 221
+                    message: "Pain is inevitable, but can it be overcome? Would you ever truly heal from your wounds?",
+                    options: [
+                        { text: "I think healing is possible, but it will always leave scars.", nextOption: 292 },
+                        { text: "I don’t think healing is possible. It changes you permanently.", nextOption: 293 }
+                    ]
+                },
+                { // 222
+                    message: "Do you regret the things you've done, or are you at peace with the choices you made?",
+                    options: [
+                        { text: "I regret them, but I can’t change them now.", nextOption: 294 },
+                        { text: "I think I’ve made peace with my choices, despite the consequences.", nextOption: 295 }
+                    ]
+                },
+                { // 223
+                    message: "Could you ever forgive someone who wronged you? Or would you carry that bitterness for life?",
+                    options: [
+                        { text: "I think I could forgive, but the bitterness would always be there.", nextOption: 296 },
+                        { text: "No, I couldn’t forgive them. I’d hold onto the pain forever.", nextOption: 297 }
+                    ]
+                },
+                { // 224
+                    message: "Revenge might give you closure, but will it ever truly bring peace to your soul?",
+                    options: [
+                        { text: "I think it will bring temporary relief, but peace will always elude me.", nextOption: 298 },
+                        { text: "I think it would bring peace, but I’d always wonder if it was worth it.", nextOption: 299 }
+                    ]
+                },
+                { // 225
+                    message: "Sometimes the scars we carry are visible, sometimes they’re not. Do you think scars are just reminders of the past or something more?",
+                    options: [
+                        { text: "They’re reminders, but they also shape who we become.", nextOption: 300 },
+                        { text: "I think scars are marks that never truly heal.", nextOption: 301 }
+                    ]
+                },
+                { // 226
+                    message: "Living in a world that doesn't understand you can be suffocating. Is it worth trying to fit in, or is it better to remain isolated?",
+                    options: [
+                        { text: "It’s better to remain isolated. Fitting in never feels real.", nextOption: 302 },
+                        { text: "I think it’s worth trying, even if it’s hard to find a place to belong.", nextOption: 303 }
+                    ]
+                },
+                { // 227
+                    message: "When the world closes in, it’s easy to lose yourself. How do you hold on to who you are when everything around you changes?",
+                    options: [
+                        { text: "I think it’s a constant struggle, but I’ll keep fighting to hold on.", nextOption: 304 },
+                        { text: "I think eventually I’ll lose myself, but I can try to find a new version of me.", nextOption: 305 }
+                    ]
+                },
+                { // 228
+                    message: "What would you do if everything you believed in crumbled? Could you rebuild, or would you fall apart?",
+                    options: [
+                        { text: "I think I’d rebuild, but I would never be the same again.", nextOption: 306 },
+                        { text: "I don’t think I could rebuild. I’d crumble under the weight of it all.", nextOption: 307 }
+                    ]
+                },
+                { // 229
+                    message: "You can only run from yourself for so long. When you face who you really are, what will you see?",
+                    options: [
+                        { text: "I think I’ll see someone I don’t recognize, but that’s who I am now.", nextOption: 308 },
+                        { text: "I’m afraid I won’t like what I see, but it’s something I need to face.", nextOption: 309 }
+                    ]
+                },
+                { // 229
+                    message: "You can only run from yourself for so long. When you face who you really are, what will you see?",
+                    options: [
+                        { text: "I think I’ll see someone I don’t recognize, but that’s who I am now.", nextOption: 310 },
+                        { text: "I’m afraid I won’t like what I see, but it’s something I need to face.", nextOption: 311 }
+                    ]
+                },
+                { // 230
+                    message: "The past is never truly gone. Does it define who you are, or can you choose a different path?",
+                    options: [
+                        { text: "I think the past defines me, whether I like it or not.", nextOption: 312 },
+                        { text: "I believe I can choose my own path, regardless of the past.", nextOption: 313 }
+                    ]
+                },
+                { // 231
+                    message: "Do you think the future is already set, or do you have the power to change it?",
+                    options: [
+                        { text: "I think the future is set. Our choices don’t change much.", nextOption: 314 },
+                        { text: "I believe I can change the future with my actions.", nextOption: 315 }
+                    ]
+                },
+                { // 232
+                    message: "When faced with overwhelming odds, do you rise to the challenge or do you give in?",
+                    options: [
+                        { text: "I’ll always rise to the challenge, no matter how difficult.", nextOption: 316 },
+                        { text: "I think sometimes it’s better to give in and accept things as they are.", nextOption: 317 }
+                    ]
+                },
+                { // 233
+                    message: "Is it better to be loved or feared? Which would you choose if you had to pick one?",
+                    options: [
+                        { text: "I think being loved brings more peace, even if it’s harder to earn.", nextOption: 318 },
+                        { text: "I’d rather be feared. Respect through fear can be powerful.", nextOption: 319 }
+                    ]
+                },
+                { // 234
+                    message: "Would you ever risk everything for a chance at greatness? Or is the cost too high?",
+                    options: [
+                        { text: "I think the risk is worth it, even if everything could be lost.", nextOption: 320 },
+                        { text: "No, the cost of losing everything is too much for me to take.", nextOption: 321 }
+                    ]
+                },
+                { // 235
+                    message: "In the end, do you believe life is about finding happiness or accepting suffering?",
+                    options: [
+                        { text: "I think life is about finding happiness, even if suffering is part of the journey.", nextOption: 322 },
+                        { text: "I believe life is about accepting suffering and making peace with it.", nextOption: 323 }
+                    ]
+                },
+                { // 236
+                    message: "How do you measure success? Is it by what you’ve achieved, or by what you’ve sacrificed?",
+                    options: [
+                        { text: "Success is about what I’ve achieved, no matter the cost.", nextOption: 324 },
+                        { text: "Success is about what I’ve sacrificed, even if I haven’t achieved much.", nextOption: 325 }
+                    ]
+                },
+                { // 237
+                    message: "When faced with a difficult choice, do you follow your heart or your mind?",
+                    options: [
+                        { text: "I trust my heart; it rarely leads me astray.", nextOption: 112 },
+                        { text: "I rely on logic and reason to guide me in tough situations.", nextOption: 45 }
+                    ]
+                },
+                { // 238
+                    message: "If everything you knew was taken away, would you still be able to find yourself?",
+                    options: [
+                        { text: "I believe I would, as long as I hold onto my core values.", nextOption: 89 },
+                        { text: "It would be incredibly hard, but I think I would eventually rebuild.", nextOption: 13 }
+                    ]
+                },
+                { // 239
+                    message: "Sometimes, the only way forward is through the pain. Can you embrace suffering for growth?",
+                    options: [
+                        { text: "Yes, pain is a teacher that helps us grow stronger.", nextOption: 72 },
+                        { text: "No, I’d rather find a way to avoid unnecessary suffering.", nextOption: 188 }
+                    ]
+                },
+                { // 240
+                    message: "Do you think it’s better to take risks and fail, or to play it safe and never know what could have been?",
+                    options: [
+                        { text: "I’d rather take risks and learn from my failures.", nextOption: 311 },
+                        { text: "It’s better to stay safe and avoid unnecessary regret.", nextOption: 246 }
+                    ]
+                },
+                { // 241
+                    message: "Are we truly in control of our destiny, or are we just following a path already laid out for us?",
+                    options: [
+                        { text: "I believe we have control over our future, even if it’s challenging.", nextOption: 121 },
+                        { text: "I think we’re just following the paths created for us by circumstances.", nextOption: 298 }
+                    ]
+                },
+                { // 242
+                    message: "If you could erase one mistake from your past, would you do it, or would you leave it as a part of your journey?",
+                    options: [
+                        { text: "I think I’d erase it, to avoid the pain it caused.", nextOption: 214 },
+                        { text: "I’d leave it; mistakes are what make us who we are.", nextOption: 37 }
+                    ]
+                },
+                { // 243
+                    message: "Sometimes, the greatest strength is to ask for help. Would you be able to let others in when you need it most?",
+                    options: [
+                        { text: "Yes, I think it’s important to rely on others when necessary.", nextOption: 54 },
+                        { text: "I find it hard to ask for help. I prefer to deal with things on my own.", nextOption: 128 }
+                    ]
+                },
+                { // 244
+                    message: "If the world fell apart, could you rebuild it, or would you crumble under the weight of everything lost?",
+                    options: [
+                        { text: "I think I could rebuild, but it would be a long and painful process.", nextOption: 310 },
+                        { text: "I’m not sure. I fear that I would break under the pressure.", nextOption: 77 }
+                    ]
+                },
+                { // 245
+                    message: "Do you believe that fate is a force that shapes us, or do we create our own paths?",
+                    options: [
+                        { text: "I believe fate plays a role, but we still have the power to change our lives.", nextOption: 58 },
+                        { text: "I think we create our own destiny through our choices and actions.", nextOption: 92 }
+                    ]
+                },
+                { // 246
+                    message: "Would you sacrifice your happiness to protect someone you love, even if it meant living in pain?",
+                    options: [
+                        { text: "Yes, I’d do anything to protect the ones I care about, even at my own expense.", nextOption: 309 },
+                        { text: "No, I think personal happiness is just as important as protecting others.", nextOption: 150 }
+                    ]
+                },
+                { // 247
+                    message: "How do you cope when the world around you is falling apart? Do you face it head-on or retreat into yourself?",
+                    options: [
+                        { text: "I face it head-on. Avoiding the chaos only makes it worse.", nextOption: 285 },
+                        { text: "I retreat. Sometimes, it’s better to gather strength before confronting the storm.", nextOption: 110 }
+                    ]
+                },
+                { // 248
+                    message: "Is there ever a time when giving up is the right choice, or should we always keep pushing forward?",
+                    options: [
+                        { text: "I think there are times when giving up is the most honest choice.", nextOption: 56 },
+                        { text: "I believe in never giving up. There's always a way through the struggle.", nextOption: 300 }
+                    ]
+                },
+                { // 249
+                    message: "How do you measure success? Is it by the things you achieve, or the person you become along the way?",
+                    options: [
+                        { text: "Success is about the journey and who I become through it.", nextOption: 29 },
+                        { text: "I measure success by the achievements and milestones I reach.", nextOption: 189 }
+                    ]
+                },
+                { // 250
+                    message: "Can love heal all wounds, or is there a pain that even love cannot fix?",
+                    options: [
+                        { text: "I think love can heal almost anything, but some wounds are too deep.", nextOption: 245 },
+                        { text: "Love is powerful, but it can’t always fix what’s broken inside.", nextOption: 18 }
+                    ]
+                },
+                { // 251
+                    message: "When you’re lost in the darkness, can you trust yourself to find your way, or do you need someone else to guide you?",
+                    options: [
+                        { text: "I believe I can find my way, even if it takes time.", nextOption: 101 },
+                        { text: "Sometimes, it’s too hard to do it alone. I’d need someone to help me navigate.", nextOption: 250 }
+                    ]
+                },
+                { // 252
+                    message: "If you were given a second chance at life, would you take it, or would you keep walking the path you’ve chosen?",
+                    options: [
+                        { text: "I would take it, to see if I could do things differently.", nextOption: 66 },
+                        { text: "I’m content with my path. I’ve made my choices, and I’ll live with them.", nextOption: 220 }
+                    ]
+                },
+                { // 253
+                    message: "When everything feels like it’s slipping through your fingers, do you try to hold on, or do you let go?",
+                    options: [
+                        { text: "I try to hold on, even when it seems impossible.", nextOption: 72 },
+                        { text: "I think letting go is sometimes the only way to find peace.", nextOption: 167 }
+                    ]
+                },
+                { // 254
+                    message: "If you knew the world was going to end tomorrow, what would you do with the time you had left?",
+                    options: [
+                        { text: "I’d spend it with loved ones, making sure they knew how much they meant to me.", nextOption: 132 },
+                        { text: "I’d try to do something meaningful or adventurous, leaving behind memories of who I was.", nextOption: 274 }
+                    ]
+                },
+                { // 255
+                    message: "Can you ever fully forgive someone who’s hurt you deeply, or is that something you’ll carry with you forever?",
+                    options: [
+                        { text: "I think I could forgive them, but the scars would always remain.", nextOption: 82 },
+                        { text: "I don’t think I could ever forgive someone who betrayed me that deeply.", nextOption: 229 }
+                    ]
+                },
+                { // 256
+                    message: "What’s the greatest fear you face: not living up to your potential, or the consequences of trying?",
+                    options: [
+                        { text: "My greatest fear is not trying at all and never knowing what I could have accomplished.", nextOption: 312 },
+                        { text: "I fear the consequences of trying and failing, even if it’s part of the journey.", nextOption: 95 }
+                    ]
+                },
+                { // 257
+                    message: "When you make a decision, do you consider the consequences for others, or do you focus solely on yourself?",
+                    options: [
+                        { text: "I always consider how my choices will affect the people around me.", nextOption: 89 },
+                        { text: "I think I focus more on myself, though I do think about others occasionally.", nextOption: 125 }
+                    ]
+                },
+                { // 258
+                    message: "Do you find it easier to forgive others, or to forgive yourself?",
+                    options: [
+                        { text: "I find it easier to forgive others; forgiving myself is much harder.", nextOption: 220 },
+                        { text: "I tend to forgive myself more easily. It's others I struggle with.", nextOption: 175 },
+                        { text: "Forgiving both is equally difficult, but I try to make peace with both sides.", nextOption: 198 }
+                    ]
+                },
+                { // 259
+                    message: "Is there more strength in solitude or in the company of others?",
+                    options: [
+                        { text: "I believe there's strength in solitude. It’s when we truly learn who we are.", nextOption: 301 },
+                        { text: "Strength lies in connection. People are stronger when they’re together.", nextOption: 185 },
+                        { text: "It depends on the situation, but a balance of both is ideal.", nextOption: 270 }
+                    ]
+                },
+                { // 260
+                    message: "If you had to choose, would you sacrifice your dreams for the happiness of others, or pursue them regardless of the cost?",
+                    options: [
+                        { text: "I would sacrifice my dreams to make those I love happy.", nextOption: 201 },
+                        { text: "I would pursue my dreams at any cost, even if it meant disappointing others.", nextOption: 350 },
+                        { text: "It would depend on the situation, but I’d like to think I could balance both.", nextOption: 180 }
+                    ]
+                },
+                { // 261
+                    message: "How do you react when you’re pushed to your limits? Do you fight back, or do you retreat?",
+                    options: [
+                        { text: "I fight back. I refuse to let anything break me.", nextOption: 301 },
+                        { text: "I tend to retreat, to regroup and come back stronger.", nextOption: 228 },
+                        { text: "I try to stay calm and think things through before reacting.", nextOption: 199 }
+                    ]
+                },
+                { // 262
+                    message: "Do you believe in fate, or do you think we create our own path?",
+                    options: [
+                        { text: "I believe fate has a hand in shaping us, but our choices matter.", nextOption: 230 },
+                        { text: "I think we create our own destiny with every decision we make.", nextOption: 270 },
+                        { text: "I’m unsure, but I think there’s a balance between both.", nextOption: 165 }
+                    ]
+                },
+                { // 263
+                    message: "What’s more important to you: peace of mind or the pursuit of passion?",
+                    options: [
+                        { text: "Peace of mind is more important to me. Without it, nothing else matters.", nextOption: 295 },
+                        { text: "Pursuing my passion is my top priority. I can handle chaos if I’m doing what I love.", nextOption: 167 },
+                        { text: "I think both are essential. Finding a way to pursue passion while maintaining peace is ideal.", nextOption: 250 }
+                    ]
+                },
+                { // 264
+                    message: "If you could change one moment from your past, would you? Or do you believe everything happens for a reason?",
+                    options: [
+                        { text: "I would change it if I could. There’s a mistake I regret deeply.", nextOption: 170 },
+                        { text: "I believe everything happens for a reason, even if it’s painful at the time.", nextOption: 310 },
+                        { text: "I’d leave the past as it is. It’s shaped who I am today.", nextOption: 280 }
+                    ]
+                },
+                { // 265
+                    message: "When life gets hard, do you tend to push through or seek comfort?",
+                    options: [
+                        { text: "I push through. I believe in overcoming challenges on my own.", nextOption: 245 },
+                        { text: "I seek comfort when things get tough. Sometimes, I need a break.", nextOption: 200 },
+                        { text: "I try to find a balance, but I lean more toward pushing through.", nextOption: 193 }
+                    ]
+                },
+                { // 266
+                    message: "If you could only choose one, would you rather have love or power?",
+                    options: [
+                        { text: "I would choose love. It’s the most fulfilling thing in life.", nextOption: 310 },
+                        { text: "Power is what I would choose. It gives you control over your destiny.", nextOption: 220 },
+                        { text: "I think both are important, but if forced to choose, love would be the priority.", nextOption: 165 }
+                    ]
+                },
+                { // 267
+                    message: "Is it better to have loved and lost, or never to have loved at all?",
+                    options: [
+                        { text: "I believe it’s better to have loved and lost. The experience is worth the pain.", nextOption: 175 },
+                        { text: "Never having loved is easier, but it’s also empty. Love gives life meaning.", nextOption: 180 },
+                        { text: "It’s a complex question, but I think both sides have their merits.", nextOption: 150 }
+                    ]
+                },
+                { // 268
+                    message: "When you face failure, do you see it as an opportunity to learn or as a reflection of your worth?",
+                    options: [
+                        { text: "Failure is an opportunity to grow. I don’t see it as a failure of who I am.", nextOption: 249 },
+                        { text: "I struggle with failure. Sometimes, it makes me question my worth.", nextOption: 275 },
+                        { text: "I think failure is a mix of both. It teaches lessons, but it can be hard to shake off.", nextOption: 220 }
+                    ]
+                },
+                { // 269
+                    message: "What do you believe is the purpose of suffering? Is it a lesson, or just an unavoidable part of life?",
+                    options: [
+                        { text: "Suffering is a lesson. It teaches us resilience and wisdom.", nextOption: 260 },
+                        { text: "Suffering is unavoidable. It’s just part of being human.", nextOption: 155 },
+                        { text: "I think suffering can be both—a lesson and an unavoidable part of life.", nextOption: 190 }
+                    ]
+                },
+                { // 270
+                    message: "Is happiness something you chase, or something you let come naturally?",
+                    options: [
+                        { text: "I chase happiness. I believe I need to take action to find it.", nextOption: 220 },
+                        { text: "I let happiness come naturally. It’s something I don’t try to force.", nextOption: 285 },
+                        { text: "I think both are important—sometimes you need to chase it, and other times, you need to let go and let it come.", nextOption: 235 }
+                    ]
+                },
+                { // 271
+                    message: "When you’re afraid of something, do you confront it head-on or try to avoid it?",
+                    options: [
+                        { text: "I confront my fears. Facing them head-on is the only way to grow.", nextOption: 160 },
+                        { text: "I avoid it as long as I can, but I eventually deal with it.", nextOption: 289 },
+                        { text: "I try to find a balance. Sometimes confronting it is the best option, other times avoidance helps.", nextOption: 274 }
+                    ]
+                },
+                { // 272
+                    message: "If you could speak to your younger self, what advice would you give?",
+                    options: [
+                        { text: "I’d tell myself to trust the journey and not be afraid to take risks.", nextOption: 189 },
+                        { text: "I’d tell myself to stop worrying about things that might never happen.", nextOption: 265 },
+                        { text: "I’d advise myself to be kinder to others and to take care of my mental health.", nextOption: 170 }
+                    ]
+                },
+                { // 273
+                    message: "Do you believe in second chances, or do you think people should live with the consequences of their actions?",
+                    options: [
+                        { text: "I believe in second chances. Everyone makes mistakes, and we should learn from them.", nextOption: 305 },
+                        { text: "People should face the consequences of their actions. There’s no growth without accountability.", nextOption: 229 },
+                        { text: "It depends on the situation, but I think people can change if they truly try.", nextOption: 290 }
+                    ]
+                },
+                { // 274
+                    message: "What does success look like to you? Is it measured by accomplishments, happiness, or something else?",
+                    options: [
+                        { text: "Success is about happiness. If I’m happy, I consider myself successful.", nextOption: 308 },
+                        { text: "Success is measured by accomplishments and the impact I’ve made.", nextOption: 320 },
+                        { text: "Success is a mix of both. Happiness and accomplishments both matter.", nextOption: 260 }
+                    ]
+                },
+                { // 275
+                    message: "When facing a major decision, do you rely more on your intuition or logic?",
+                    options: [
+                        { text: "I rely more on intuition. It often guides me to the right choice.", nextOption: 228 },
+                        { text: "Logic is my go-to. I like to weigh all the facts before making a decision.", nextOption: 190 },
+                        { text: "I use both, depending on the situation. A balance between intuition and logic works best for me.", nextOption: 250 }
+                    ]
+                },
+                { // 276
+                    message: "When you face adversity, do you draw strength from your own resilience or from the support of others?",
+                    options: [
+                        { text: "I draw strength from my own resilience. I believe in self-reliance.", nextOption: 305 },
+                        { text: "The support of others is crucial. I find strength in the people around me.", nextOption: 190 },
+                        { text: "I think both are important. My own strength and the support of others help me get through tough times.", nextOption: 265 }
+                    ]
+                },
+                { // 277
+                    message: "Do you think happiness is a destination to reach or a journey to experience?",
+                    options: [
+                        { text: "Happiness is a destination. Once I get there, I’ll feel fulfilled.", nextOption: 315 },
+                        { text: "Happiness is a journey. It’s about finding joy in the little things along the way.", nextOption: 230 },
+                        { text: "I think it’s a bit of both. The destination is important, but the journey matters too.", nextOption: 260 }
+                    ]
+                },
+                { // 278
+                    message: "If you had the power to change one thing about the world, what would it be?",
+                    options: [
+                        { text: "I would change how people treat each other. Kindness and empathy should be the foundation.", nextOption: 290 },
+                        { text: "I would focus on creating a world where everyone has access to education and opportunities.", nextOption: 350 },
+                        { text: "I would work to eliminate poverty and inequality. No one should have to suffer in a world of abundance.", nextOption: 230 }
+                    ]
+                },
+                { // 279
+                    message: "When making a tough decision, do you trust your gut instinct or take time to analyze the situation?",
+                    options: [
+                        { text: "I trust my gut. It’s often more accurate than I give it credit for.", nextOption: 245 },
+                        { text: "I take time to analyze the situation. I prefer to think things through thoroughly.", nextOption: 190 },
+                        { text: "I try to balance both. Sometimes my gut tells me one thing, but I still take a step back to think it through.", nextOption: 270 }
+                    ]
+                },
+                { // 280
+                    message: "Is it better to be feared or loved in your personal relationships?",
+                    options: [
+                        { text: "I’d rather be loved. Genuine affection is more fulfilling than fear.", nextOption: 300 },
+                        { text: "Being feared can sometimes be necessary, but love is always more powerful in the long run.", nextOption: 260 },
+                        { text: "It’s a balance. Being loved creates trust, but sometimes a bit of respect and fear is needed too.", nextOption: 240 }
+                    ]
+                },
+                { // 281
+                    message: "Do you believe that your actions define you, or that your thoughts and intentions are what matter most?",
+                    options: [
+                        { text: "My actions define me. What I do speaks louder than what I think.", nextOption: 315 },
+                        { text: "My thoughts and intentions matter most. I believe they shape who I am, even if my actions aren’t always perfect.", nextOption: 230 },
+                        { text: "Both are equally important. Actions and intentions should align for a true sense of self.", nextOption: 275 }
+                    ]
+                },
+                { // 282
+                    message: "What do you value more: the pursuit of knowledge or the preservation of wisdom?",
+                    options: [
+                        { text: "I value the pursuit of knowledge. There’s always something new to learn.", nextOption: 190 },
+                        { text: "Preserving wisdom is more important. Knowledge without wisdom can lead to poor decisions.", nextOption: 260 },
+                        { text: "I think both are important. Knowledge and wisdom go hand in hand to guide us through life.", nextOption: 230 }
+                    ]
+                },
+                { // 283
+                    message: "Do you think it’s better to live a life of routine or embrace spontaneity?",
+                    options: [
+                        { text: "I prefer routine. It brings stability and peace to my life.", nextOption: 300 },
+                        { text: "Spontaneity is the key to a fulfilling life. Living in the moment is the best way to experience the world.", nextOption: 265 },
+                        { text: "I try to find a balance between the two. A little spontaneity mixed with routine keeps life interesting.", nextOption: 220 }
+                    ]
+                },
+                { // 284
+                    message: "When faced with failure, do you analyze what went wrong or move on quickly to avoid dwelling on it?",
+                    options: [
+                        { text: "I analyze failure. I want to learn from every setback.", nextOption: 240 },
+                        { text: "I move on quickly. Dwelling on failure only slows me down.", nextOption: 220 },
+                        { text: "I think it’s important to analyze, but also to let go quickly so I don’t get stuck in the past.", nextOption: 250 }
+                    ]
+                },
+                { // 285
+                    message: "Is it better to have a few close friends or a wide network of acquaintances?",
+                    options: [
+                        { text: "I prefer a few close friends. Quality over quantity is important to me.", nextOption: 270 },
+                        { text: "A wide network can be valuable, but I appreciate the depth that comes with a few close friendships.", nextOption: 240 },
+                        { text: "It’s all about balance. I want both deep connections and a broad network to support me.", nextOption: 200 }
+                    ]
+                },
+                { // 286
+                    message: "If you could live anywhere in the world, where would it be and why?",
+                    options: [
+                        { text: "I would live somewhere quiet and serene, close to nature, to find peace and balance.", nextOption: 310 },
+                        { text: "I’d live in a bustling city with a rich culture and endless opportunities to grow and learn.", nextOption: 280 },
+                        { text: "I want a balance of both—a place with vibrant culture and access to nature for peace.", nextOption: 260 }
+                    ]
+                },
+                { // 287
+                    message: "Is it more important to be respected or liked?",
+                    options: [
+                        { text: "Respect is more important to me. I’d rather earn respect than be liked for the wrong reasons.", nextOption: 305 },
+                        { text: "Being liked is important for building strong connections and bonds.", nextOption: 250 },
+                        { text: "Both are important. I’d like to be respected, but also to have positive relationships with others.", nextOption: 270 }
+                    ]
+                },
+                { // 288
+                    message: "When you feel lost, what helps you find your way again?",
+                    options: [
+                        { text: "I turn inward, focusing on my intuition to guide me.", nextOption: 320 },
+                        { text: "I lean on the support of close friends and family to help me find direction.", nextOption: 265 },
+                        { text: "I seek inspiration from outside sources—books, art, and nature all help me regain clarity.", nextOption: 240 }
+                    ]
+                },
+                { // 289
+                    message: "Do you value success more than happiness, or happiness more than success?",
+                    options: [
+                        { text: "I value happiness more. Success without happiness feels empty.", nextOption: 300 },
+                        { text: "Success is more important. Achieving my goals brings me a sense of fulfillment.", nextOption: 220 },
+                        { text: "Both are important. I want to be successful, but happiness is what makes the success worth it.", nextOption: 250 }
+                    ]
+                },
+                { // 290
+                    message: "Is it better to follow your heart or follow your head when making important decisions?",
+                    options: [
+                        { text: "I follow my heart. It’s where my true desires and passions lie.", nextOption: 265 },
+                        { text: "I rely on my head. Logical thinking helps me make better, more calculated choices.", nextOption: 210 },
+                        { text: "I think it’s a balance. I use my head for strategy and my heart for passion.", nextOption: 280 }
+                    ]
+                },
+                { // 291
+                    message: "Would you rather have the ability to predict the future or change the past?",
+                    options: [
+                        { text: "I’d rather predict the future. It gives me a chance to prepare and adapt.", nextOption: 320 },
+                        { text: "I’d choose to change the past. I’d want to fix the mistakes I made.", nextOption: 250 },
+                        { text: "I’d choose both. If I could, I’d use both powers to live a better life.", nextOption: 275 }
+                    ]
+                },
+                { // 292
+                    message: "Is it more important to be free or to be secure?",
+                    options: [
+                        { text: "Freedom is more important to me. I’d rather have autonomy than security.", nextOption: 310 },
+                        { text: "Security is key. Without it, freedom can feel meaningless.", nextOption: 235 },
+                        { text: "A balance of both. Freedom with some level of security is the ideal state.", nextOption: 290 }
+                    ]
+                },
+                { // 293
+                    message: "What’s more important to you: adventure or stability?",
+                    options: [
+                        { text: "Adventure is what drives me. I need excitement and new experiences in life.", nextOption: 315 },
+                        { text: "Stability is essential. I need a sense of security to feel at ease.", nextOption: 270 },
+                        { text: "I value both. A little adventure mixed with stability makes life more fulfilling.", nextOption: 250 }
+                    ]
+                },
+                { // 294
+                    message: "Do you think happiness is a choice or a state of being?",
+                    options: [
+                        { text: "I think happiness is a choice. We can decide to find joy, even in difficult circumstances.", nextOption: 265 },
+                        { text: "Happiness is a state of being. It comes from within, and we must learn to cultivate it.", nextOption: 285 },
+                        { text: "I think it’s a bit of both. We can choose happiness, but it’s also something that has to come naturally.", nextOption: 255 }
+                    ]
+                },
+                { // 295
+                    message: "Do you believe that everything happens for a reason, or do you think life is a series of random events?",
+                    options: [
+                        { text: "I believe everything happens for a reason. There’s a higher purpose in everything.", nextOption: 320 },
+                        { text: "Life is a series of random events. We make our own meaning out of it.", nextOption: 275 },
+                        { text: "I think both are true. Some things are meant to be, but others are just random chance.", nextOption: 260 }
+                    ]
+                },
+                { // 296
+                    message: "Is it better to be highly skilled in one thing or moderately skilled in many things?",
+                    options: [
+                        { text: "I’d rather be highly skilled in one thing. Mastery is important to me.", nextOption: 285 },
+                        { text: "I value being moderately skilled in many things. It gives me versatility and adaptability.", nextOption: 270 },
+                        { text: "Both have their advantages. It depends on the situation and what’s needed.", nextOption: 230 }
+                    ]
+                },
+                { // 297
+                    message: "Do you value peace more than passion, or passion more than peace?",
+                    options: [
+                        { text: "I value peace more. Inner peace is what gives me the clarity to pursue my goals.", nextOption: 290 },
+                        { text: "Passion is more important to me. It fuels my ambition and gives me purpose.", nextOption: 250 },
+                        { text: "I think both are important. Passion drives me, but peace gives me the balance to enjoy life.", nextOption: 270 }
+                    ]
+                },
+                { // 298
+                    message: "Do you find joy in the little moments or in grand, life-changing experiences?",
+                    options: [
+                        { text: "I find joy in the little moments. It’s the small things that make life beautiful.", nextOption: 275 },
+                        { text: "Grand experiences bring me joy. I seek out transformative moments.", nextOption: 240 },
+                        { text: "I appreciate both. A balance of small moments and big experiences keeps life interesting.", nextOption: 250 }
+                    ]
+                },
+                { // 299
+                    message: "When you encounter a challenge, do you face it head-on or take a step back to assess it first?",
+                    options: [
+                        { text: "I face it head-on. I believe challenges are meant to be conquered.", nextOption: 280 },
+                        { text: "I take a step back. I prefer to analyze the situation thoroughly before acting.", nextOption: 230 },
+                        { text: "I think it’s important to strike a balance. Sometimes jumping in is necessary, other times it’s better to think things through.", nextOption: 260 }
+                    ]
+                },
+                { // 300
+                    message: "Do you value loyalty or independence more in your relationships?",
+                    options: [
+                        { text: "Loyalty is more important to me. Trust and commitment form the foundation of any relationship.", nextOption: 320 },
+                        { text: "Independence is key. I believe it’s important to maintain a sense of self, even in close relationships.", nextOption: 270 },
+                        { text: "I think both are essential. A relationship needs both loyalty and independence to thrive.", nextOption: 250 }
+                    ]
+                },
+                { // 301
+                    message: "Do you believe that challenges make us stronger, or do you think they simply teach us to endure?",
+                    options: [
+                        { text: "Challenges make us stronger. They shape our character and resilience.", nextOption: 302 },
+                        { text: "Challenges teach us to endure. They build our ability to persist despite adversity.", nextOption: 303 },
+                        { text: "I think both are true. Challenges help us grow, but they also teach us how to cope with hardship.", nextOption: 304 }
+                    ]
+                },
+                { // 302
+                    message: "Do you think success is determined by hard work or by natural talent?",
+                    options: [
+                        { text: "Success is determined by hard work. Anyone can succeed with enough effort and dedication.", nextOption: 305 },
+                        { text: "Natural talent plays a significant role, but hard work is still important to hone that talent.", nextOption: 306 },
+                        { text: "I think both are important. Hard work can take you far, but natural talent gives you a head start.", nextOption: 307 }
+                    ]
+                },
+                { // 303
+                    message: "Would you rather have the ability to heal others or the ability to communicate with animals?",
+                    options: [
+                        { text: "I’d rather have the ability to heal others. It would allow me to make a real difference in people’s lives.", nextOption: 308 },
+                        { text: "The ability to communicate with animals would be amazing. It would open up a whole new world of understanding.", nextOption: 309 },
+                        { text: "I think both would be incredible. Healing others is important, but connecting with animals could bring a deeper sense of empathy.", nextOption: 310 }
+                    ]
+                },
+                { // 304
+                    message: "What’s more important to you: achieving your personal goals or helping others achieve theirs?",
+                    options: [
+                        { text: "Achieving my personal goals is most important. I need to fulfill my own potential before I can help others.", nextOption: 311 },
+                        { text: "Helping others achieve their goals is more important. I find fulfillment in seeing others succeed.", nextOption: 312 },
+                        { text: "A balance of both. I want to achieve my own goals, but I also want to contribute to the success of others.", nextOption: 313 }
+                    ]
+                },
+                { // 305
+                    message: "Do you think it’s more important to focus on the present moment or to plan for the future?",
+                    options: [
+                        { text: "The present moment is most important. We can only control what’s happening now.", nextOption: 314 },
+                        { text: "Planning for the future is crucial. It’s important to have a vision and work towards it.", nextOption: 315 },
+                        { text: "I think both are necessary. The present moment is where life happens, but planning for the future keeps us on track.", nextOption: 316 }
+                    ]
+                },
+                { // 306
+                    message: "Would you rather have a life of simplicity or a life full of adventure and challenges?",
+                    options: [
+                        { text: "A life of simplicity sounds ideal. I value peace and calm over constant excitement.", nextOption: 317 },
+                        { text: "I’d prefer a life full of adventure and challenges. It’s through overcoming obstacles that we grow.", nextOption: 318 },
+                        { text: "I think a little of both is the best option. I want some simplicity, but I also crave adventure.", nextOption: 319 }
+                    ]
+                },
+                { // 307
+                    message: "Do you believe that luck plays a large role in success, or do you think it’s all about hard work and determination?",
+                    options: [
+                        { text: "Luck plays a role, but hard work and determination are what ultimately lead to success.", nextOption: 320 },
+                        { text: "Success is all about hard work and determination. Luck might help, but it’s the effort that counts.", nextOption: 321 },
+                        { text: "Luck definitely has an impact, but it’s the balance of hard work and timing that leads to success.", nextOption: 322 }
+                    ]
+                },
+                { // 308
+                    message: "Is it better to be an optimist or a realist in life?",
+                    options: [
+                        { text: "I prefer to be an optimist. A positive outlook can create opportunities even in tough situations.", nextOption: 323 },
+                        { text: "Realism is better. Understanding things as they truly are helps you navigate life more effectively.", nextOption: 324 },
+                        { text: "A bit of both. Optimism helps me stay hopeful, but realism helps me stay grounded.", nextOption: 325 }
+                    ]
+                },
+                { // 309
+                    message: "When you think about your legacy, what do you hope to leave behind?",
+                    options: [
+                        { text: "I hope to leave behind a legacy of kindness and compassion, making a positive impact on those around me.", nextOption: 326 },
+                        { text: "I want to leave a legacy of accomplishment and success, showing that hard work pays off.", nextOption: 327 },
+                        { text: "I hope to leave behind a balanced legacy, one that reflects both my achievements and the love I shared with others.", nextOption: 328 }
+                    ]
+                },
+                { // 310
+                    message: "Do you believe it’s more important to make your own path in life or to follow the example set by others?",
+                    options: [
+                        { text: "Making my own path is crucial. I want to create my own journey, not follow in someone else’s footsteps.", nextOption: 329 },
+                        { text: "I believe in following the example set by others. Learning from those who have gone before me can lead to success.", nextOption: 330 },
+                        { text: "I think a balance of both is best. It’s important to be inspired by others, but it’s also important to carve out my own way.", nextOption: 331 }
+                    ]
+                },
+                { // 311
+                    message: "Is it more important to be constantly moving forward or to take time to reflect on where you’ve been?",
+                    options: [
+                        { text: "I value constantly moving forward. Progress is what keeps me going.", nextOption: 332 },
+                        { text: "Taking time to reflect is more important. Understanding where I’ve been helps me better navigate where I’m going.", nextOption: 333 },
+                        { text: "Both are essential. I need to move forward, but I also need to reflect to understand my progress.", nextOption: 334 }
+                    ]
+                },
+                { // 312
+                    message: "Would you rather have a deep connection with a few people or many shallow connections with lots of people?",
+                    options: [
+                        { text: "I’d rather have a deep connection with a few people. Quality over quantity is what matters most to me.", nextOption: 335 },
+                        { text: "Many shallow connections suit me just fine. I like having a wide range of relationships.", nextOption: 336 },
+                        { text: "I think a balance of both is ideal. Deep connections are important, but it’s also nice to have a wide circle of acquaintances.", nextOption: 337 }
+                    ]
+                },
+                { // 313
+                    message: "When making an important decision, do you seek advice from others or trust your own judgment?",
+                    options: [
+                        { text: "I trust my own judgment. I believe in my ability to make the right decision for myself.", nextOption: 338 },
+                        { text: "I seek advice from others. I value the perspectives and experiences of people I trust.", nextOption: 339 },
+                        { text: "I try to do both. I consider my own judgment, but I also value the input of others.", nextOption: 340 }
+                    ]
+                },
+                { // 314
+                    message: "Is it more important to be in a relationship or to focus on personal growth?",
+                    options: [
+                        { text: "Personal growth is more important. I need to focus on becoming the best version of myself.", nextOption: 341 },
+                        { text: "Being in a relationship is essential. It’s about building meaningful connections and sharing life with others.", nextOption: 342 },
+                        { text: "I think both are important. Personal growth and relationships complement each other in a fulfilling life.", nextOption: 343 }
+                    ]
+                },
+                { // 315
+                    message: "Would you rather have the ability to change the past or see into the future?",
+                    options: [
+                        { text: "Changing the past would allow me to fix my mistakes and make different choices.", nextOption: 344 },
+                        { text: "Seeing into the future would give me the chance to prepare for what’s coming.", nextOption: 345 },
+                        { text: "Both would be valuable. Changing the past could right wrongs, and seeing the future could help me make better choices.", nextOption: 346 }
+                    ]
+                },
+                { // 316
+                    message: "Do you think people are inherently good or inherently flawed?",
+                    options: [
+                        { text: "I believe people are inherently good, but circumstances can influence behavior.", nextOption: 317 },
+                        { text: "People are inherently flawed, but we have the capacity for growth and improvement.", nextOption: 0 }
+                    ]
+                },
+                { // 317
+                    message: "Is it more important to be liked by others or to be respected?",
+                    options: [
+                        { text: "Being respected is more important. It’s about earning admiration for who you truly are.", nextOption: 318 },
+                        { text: "Being liked matters more. I value connection and positive relationships above all.", nextOption: 319 }
+                    ]
+                },
+                { // 318
+                    message: "Would you rather be feared or loved?",
+                    options: [
+                        { text: "I’d rather be loved. Genuine affection and trust are more valuable in the long run.", nextOption: 320 },
+                        { text: "Being feared could command respect, but I think love brings deeper connections.", nextOption: 0 }
+                    ]
+                },
+                { // 319
+                    message: "Do you believe in fate or do we create our own destiny?",
+                    options: [
+                        { text: "I believe we create our own destiny. Our choices shape our future.", nextOption: 321 },
+                        { text: "Fate plays a role. Sometimes things happen for a reason, even if we don’t understand it.", nextOption: 0 }
+                    ]
+                },
+                { // 320
+                    message: "Is it better to be an independent person or to rely on others for support?",
+                    options: [
+                        { text: "Being independent is more important. I want to be self-sufficient and confident in my own abilities.", nextOption: 322 },
+                        { text: "Relying on others is crucial. Life is about building supportive networks and trusting others.", nextOption: 0 }
+                    ]
+                },
+                { // 321
+                    message: "Do you think the journey is more important than the destination?",
+                    options: [
+                        { text: "The journey is where the real growth happens. It’s about learning along the way.", nextOption: 323 },
+                        { text: "The destination matters most. Reaching a goal gives purpose to the journey.", nextOption: 324 }
+                    ]
+                },
+                { // 322
+                    message: "Would you rather live in the past, present, or future?",
+                    options: [
+                        { text: "I’d prefer to live in the present. It’s the only moment we can truly experience.", nextOption: 0 },
+                        { text: "Living in the future sounds intriguing. It would be fascinating to see what’s to come.", nextOption: 325 }
+                    ]
+                },
+                { // 323
+                    message: "Do you prefer stability or the thrill of change?",
+                    options: [
+                        { text: "Stability is essential. I like having a steady foundation to build upon.", nextOption: 326 },
+                        { text: "I thrive on change. New experiences and challenges keep life exciting.", nextOption: 0 }
+                    ]
+                },
+                { // 324
+                    message: "Do you believe that money can buy happiness?",
+                    options: [
+                        { text: "Money can help with comfort and opportunities, but true happiness comes from within.", nextOption: 327 },
+                        { text: "Money definitely makes life easier, but it’s not the key to lasting happiness.", nextOption: 328 }
+                    ]
+                },
+                { // 325
+                    message: "Is it more important to be open-minded or to stand by your principles?",
+                    options: [
+                        { text: "Being open-minded is crucial. I think we should always be willing to learn and adapt.", nextOption: 0 },
+                        { text: "Standing by your principles is important. Our values guide our decisions and actions.", nextOption: 329 }
+                    ]
+                },
+                { // 326
+                    message: "Do you value logic or emotions more in making decisions?",
+                    options: [
+                        { text: "Logic is more important. I prefer to think through things rationally.", nextOption: 330 },
+                        { text: "Emotions are key. I believe our feelings are often the best guides for decision-making.", nextOption: 0 }
+                    ]
+                },
+                { // 327
+                    message: "Is it more important to have freedom or security in life?",
+                    options: [
+                        { text: "Freedom is essential. I value independence and the ability to make my own choices.", nextOption: 0 },
+                        { text: "Security is more important. I need stability and a sense of safety to thrive.", nextOption: 331 }
+                    ]
+                },
+                { // 328
+                    message: "Would you rather have a small circle of close friends or a large network of acquaintances?",
+                    options: [
+                        { text: "A small circle of close friends is better. Quality over quantity matters most to me.", nextOption: 332 },
+                        { text: "A large network of acquaintances is valuable. It offers more opportunities and connections.", nextOption: 0 }
+                    ]
+                },
+                { // 329
+                    message: "Do you prefer to spend your time in solitude or in social situations?",
+                    options: [
+                        { text: "I enjoy solitude. It helps me recharge and reflect on my thoughts.", nextOption: 333 },
+                        { text: "Social situations are more enjoyable. I find energy and inspiration in connecting with others.", nextOption: 0 }
+                    ]
+                },
+                { // 330
+                    message: "Is it better to live a life full of excitement or a life full of peace?",
+                    options: [
+                        { text: "Excitement is key. I want a life full of adventure and new experiences.", nextOption: 334 },
+                        { text: "Peace is more important. I value calm and serenity in my life.", nextOption: 0 }
+                    ]
+                },
+                { // 331
+                    message: "Would you rather be famous or remain anonymous?",
+                    options: [
+                        { text: "I’d rather remain anonymous. I value my privacy and prefer not to be in the spotlight.", nextOption: 335 },
+                        { text: "Fame could be interesting. It would bring opportunities and influence.", nextOption: 0 }
+                    ]
+                },
+                { // 332
+                    message: "Do you believe in second chances?",
+                    options: [
+                        { text: "I believe in second chances. Everyone deserves the opportunity to make things right.", nextOption: 336 },
+                        { text: "Second chances can be dangerous. Sometimes it’s better to move on from past mistakes.", nextOption: 0 }
+                    ]
+                },
+                { // 333
+                    message: "Do you think it’s possible to truly change as a person?",
+                    options: [
+                        { text: "People can change, but it takes a lot of effort and self-awareness.", nextOption: 337 },
+                        { text: "Change is difficult, but I think it’s possible with determination and support.", nextOption: 0 }
+                    ]
+                },
+                { // 334
+                    message: "Would you rather be a leader or a follower?",
+                    options: [
+                        { text: "I’d rather be a leader. I like to guide and inspire others.", nextOption: 338 },
+                        { text: "Being a follower can be valuable too. I’m comfortable learning from those with more experience.", nextOption: 0 }
+                    ]
+                },
+                { // 335
+                    message: "Do you think it’s more important to dream big or to set achievable goals?",
+                    options: [
+                        { text: "Dreaming big is important. It helps me aim high and push my limits.", nextOption: 0 },
+                        { text: "Setting achievable goals is better. They keep me grounded and focused on realistic progress.", nextOption: 339 }
+                    ]
+                },
+                { // 336
+                    message: "Would you rather have a life filled with passion or a life filled with comfort?",
+                    options: [
+                        { text: "Passion is essential. I want to live a life full of excitement and meaning.", nextOption: 340 },
+                        { text: "Comfort is more important. I value security and peace of mind above all.", nextOption: 0 }
+                    ]
+                },
+                { // 337
+                    message: "Would you rather focus on personal growth or external success?",
+                    options: [
+                        { text: "Personal growth is my priority. It’s about becoming the best version of myself.", nextOption: 338 },
+                        { text: "External success is key. I value achievements and recognition in the world.", nextOption: 0 }
+                    ]
+                },
+                { // 338
+                    message: "Is it better to seek truth or to seek happiness?",
+                    options: [
+                        { text: "Truth is more important. Understanding the world as it is brings clarity.", nextOption: 0 },
+                        { text: "Happiness is the goal. I believe in finding joy in the journey, even if the truth is hard.", nextOption: 339 }
+                    ]
+                },
+                { // 339
+                    message: "Do you think it’s better to make decisions based on logic or intuition?",
+                    options: [
+                        { text: "Logic guides better decisions. It's clearer and more reliable for me.", nextOption: 340 },
+                        { text: "Intuition is my guide. I trust my gut to lead me in the right direction.", nextOption: 0 }
+                    ]
+                },
+                { // 340
+                    message: "Would you prefer to have unlimited time or unlimited money?",
+                    options: [
+                        { text: "Unlimited time would be amazing. I could explore everything I want without pressure.", nextOption: 0 },
+                        { text: "Unlimited money could bring opportunities and freedom to live life fully.", nextOption: 341 }
+                    ]
+                },
+                { // 341
+                    message: "Is it more important to be a good person or to be a successful person?",
+                    options: [
+                        { text: "Being a good person is my priority. Integrity and kindness matter more than success.", nextOption: 342 },
+                        { text: "Success is important. It defines the impact I have in the world.", nextOption: 0 }
+                    ]
+                },
+                { // 342
+                    message: "Would you rather be in control of your destiny or let life surprise you?",
+                    options: [
+                        { text: "I’d prefer to control my destiny. Planning and effort guide me toward my goals.", nextOption: 343 },
+                        { text: "Letting life surprise me sounds exciting. I want to embrace the unknown.", nextOption: 0 }
+                    ]
+                },
+                { // 343
+                    message: "Do you think happiness is a choice or a result of circumstances?",
+                    options: [
+                        { text: "Happiness is a choice. I believe we can choose to focus on the positive.", nextOption: 344 },
+                        { text: "Happiness is a result of circumstances. External factors play a significant role.", nextOption: 0 }
+                    ]
+                },
+                { // 344
+                    message: "Would you prefer to live a life full of adventure or a life full of routine?",
+                    options: [
+                        { text: "Adventure excites me. I crave new experiences and challenges.", nextOption: 345 },
+                        { text: "Routine provides comfort. I find peace in structure and predictability.", nextOption: 0 }
+                    ]
+                },
+                { // 345
+                    message: "Do you think it’s more important to focus on the present or plan for the future?",
+                    options: [
+                        { text: "The present matters most. Living fully in the moment brings true satisfaction.", nextOption: 0 },
+                        { text: "Planning for the future is key. Preparing for what's to come leads to success.", nextOption: 346 }
+                    ]
+                },
+                { // 346
+                    message: "Would you rather have the ability to read minds or be invisible?",
+                    options: [
+                        { text: "Being invisible would be incredible. I could move freely without being noticed.", nextOption: 347 },
+                        { text: "Reading minds would be fascinating. Understanding others' thoughts would bring new insights.", nextOption: 0 }
+                    ]
+                },
+                { // 347
+                    message: "Is it better to be remembered for your achievements or for your kindness?",
+                    options: [
+                        { text: "Kindness is more important. I want to leave a legacy of positive impact on others.", nextOption: 348 },
+                        { text: "Achievements define me. I want to be remembered for my success and contributions.", nextOption: 0 }
+                    ]
+                },
+                { // 348
+                    message: "Would you prefer to have everything you want instantly or work hard to earn it?",
+                    options: [
+                        { text: "Earning things through hard work is more fulfilling. The journey is what makes it valuable.", nextOption: 349 },
+                        { text: "Getting everything instantly sounds tempting. I’d love to avoid delays and obstacles.", nextOption: 0 }
+                    ]
+                },
+                { // 349
+                    message: "Is it more important to forgive others or to protect yourself from harm?",
+                    options: [
+                        { text: "Forgiving others is essential. It brings peace and closure, even if it’s hard.", nextOption: 350 },
+                        { text: "Protecting myself comes first. I need to ensure my own well-being before considering others.", nextOption: 0 }
+                    ]
+                },
+                { // 350
+                    message: "Would you rather live with no regrets or have the chance to change your past?",
+                    options: [
+                        { text: "Living with no regrets is better. I’d rather embrace my choices and learn from them.", nextOption: 0 },
+                        { text: "Changing my past could be tempting. There are moments I’d love to redo or improve.", nextOption: 351 }
+                    ]
+                },
+                { // 351
+                    message: "Would you rather have a perfect memory or be able to forget anything at will?",
+                    options: [
+                        { text: "A perfect memory would be incredible. I could recall every detail, every lesson learned.", nextOption: 352 },
+                        { text: "Being able to forget things at will sounds liberating. I could leave behind painful memories.", nextOption: 353 }
+                    ]
+                },
+                { // 352
+                    message: "Is it more important to love yourself or to love others?",
+                    options: [
+                        { text: "Loving myself is crucial. Self-love is the foundation for all other relationships.", nextOption: 354 },
+                        { text: "Loving others is what matters. I believe love is best when shared and given to those around me.", nextOption: 355 }
+                    ]
+                },
+                { // 353
+                    message: "Would you rather never age or never need sleep?",
+                    options: [
+                        { text: "Never aging sounds amazing. I’d love to stay at my best and enjoy life longer.", nextOption: 356 },
+                        { text: "Never needing sleep would be fantastic. I could accomplish so much more without rest!", nextOption: 357 }
+                    ]
+                },
+                { // 354
+                    message: "Do you think success is more about effort or opportunity?",
+                    options: [
+                        { text: "Effort is key to success. Hard work and perseverance pay off in the long run.", nextOption: 358 },
+                        { text: "Opportunity plays a big role. Being in the right place at the right time can make all the difference.", nextOption: 359 }
+                    ]
+                },
+                { // 355
+                    message: "Would you rather have the ability to heal others or to heal yourself instantly?",
+                    options: [
+                        { text: "Healing others would be incredible. I could help those in pain and make a difference.", nextOption: 360 },
+                        { text: "Healing myself instantly would be a great power. I’d never have to suffer from illness or injury.", nextOption: 361 }
+                    ]
+                },
+                { // 356
+                    message: "Would you prefer to be an expert in one thing or knowledgeable in many things?",
+                    options: [
+                        { text: "Being an expert in one thing would be great. Mastery and deep understanding would be so rewarding.", nextOption: 362 },
+                        { text: "Being knowledgeable in many things sounds exciting. I love the idea of having diverse skills and interests.", nextOption: 363 }
+                    ]
+                },
+                { // 357
+                    message: "Is it better to take risks or to play it safe?",
+                    options: [
+                        { text: "Taking risks can lead to growth and new experiences. I’m all for stepping out of my comfort zone.", nextOption: 364 },
+                        { text: "Playing it safe ensures stability and security. I prefer to avoid unnecessary risks.", nextOption: 365 }
+                    ]
+                },
+                { // 358
+                    message: "Would you rather experience extreme highs or avoid extreme lows?",
+                    options: [
+                        { text: "Extreme highs would be thrilling. I’d love to experience the excitement and intensity of life.", nextOption: 366 },
+                        { text: "Avoiding extreme lows is more important. Stability and emotional balance are my priorities.", nextOption: 367 }
+                    ]
+                },
+                { // 359
+                    message: "Would you prefer to work alone or in a team?",
+                    options: [
+                        { text: "Working alone suits me. I enjoy the focus and independence it brings.", nextOption: 368 },
+                        { text: "Working in a team is great. Collaboration and sharing ideas make projects more enjoyable.", nextOption: 369 }
+                    ]
+                },
+                { // 360
+                    message: "Would you rather be famous for a short time or be well-known among a small group of people for a lifetime?",
+                    options: [
+                        { text: "Fame for a short time would be exciting. I’d love to experience it, even if it’s brief.", nextOption: 370 },
+                        { text: "Being well-known among a small group sounds fulfilling. Long-lasting relationships matter more.", nextOption: 371 }
+                    ]
+                },
+                { // 361
+                    message: "Is it more important to be ambitious or content?",
+                    options: [
+                        { text: "Ambition drives me. I’m always striving for something more and pushing my limits.", nextOption: 372 },
+                        { text: "Contentment is key. I want to be at peace with where I am in life, without needing more.", nextOption: 373 }
+                    ]
+                },
+                { // 362
+                    message: "Would you rather have the power of telekinesis or the ability to manipulate time?",
+                    options: [
+                        { text: "Telekinesis would be incredible. I could move things with my mind and have so much control.", nextOption: 374 },
+                        { text: "Manipulating time sounds amazing. I could pause, rewind, or fast-forward time as needed.", nextOption: 375 }
+                    ]
+                },
+                { // 363
+                    message: "Would you rather have a job that you’re passionate about but pays little or a job you don’t like but pays well?",
+                    options: [
+                        { text: "Passion over pay. Doing something I love is worth more than a high salary.", nextOption: 376 },
+                        { text: "A high-paying job is tempting. Financial stability is important for my future.", nextOption: 377 }
+                    ]
+                },
+                { // 364
+                    message: "Would you prefer to be surrounded by people who challenge you or people who support you?",
+                    options: [
+                        { text: "People who challenge me help me grow. I appreciate being pushed out of my comfort zone.", nextOption: 378 },
+                        { text: "Supportive people are essential. I need encouragement to feel secure and confident.", nextOption: 379 }
+                    ]
+                },
+                { // 365
+                    message: "Would you rather have a few close friends or many acquaintances?",
+                    options: [
+                        { text: "A few close friends is more meaningful. I prefer deep, lasting connections.", nextOption: 380 },
+                        { text: "Many acquaintances can be fun. I enjoy having a wide network of people to interact with.", nextOption: 381 }
+                    ]
+                },
+                { // 366
+                    message: "Would you rather live in a world where everyone is equal or in a world where there is a clear leader?",
+                    options: [
+                        { text: "Equality is key. I believe everyone should have the same opportunities and rights.", nextOption: 382 },
+                        { text: "A clear leader can provide direction. It’s easier to have someone guiding the way.", nextOption: 383 }
+                    ]
+                },
+                { // 367
+                    message: "Would you rather be able to speak any language or understand any subject instantly?",
+                    options: [
+                        { text: "Speaking any language would be amazing. I could connect with people from all around the world.", nextOption: 384 },
+                        { text: "Understanding any subject instantly would be powerful. I could master any topic at will.", nextOption: 385 }
+                    ]
+                },
+                { // 368
+                    message: "Would you rather live in the mountains or by the sea?",
+                    options: [
+                        { text: "The mountains appeal to me. The peace and beauty of nature would be so calming.", nextOption: 386 },
+                        { text: "The sea is where I’d prefer to be. I love the sound of the waves and the expansive view.", nextOption: 387 }
+                    ]
+                },
+                { // 369
+                    message: "Would you rather have unlimited resources but no freedom or limited resources with total freedom?",
+                    options: [
+                        { text: "Unlimited resources with no freedom isn’t worth it. I value my freedom too much.", nextOption: 388 },
+                        { text: "Limited resources with freedom sounds ideal. The ability to choose my path is priceless.", nextOption: 389 }
+                    ]
+                },
+                { // 370
+                    message: "Would you rather know the meaning of life or the secrets of the universe?",
+                    options: [
+                        { text: "Knowing the meaning of life would give me clarity and purpose.", nextOption: 390 },
+                        { text: "The secrets of the universe would be fascinating. I’d love to understand the mysteries of existence.", nextOption: 391 }
+                    ]
+                },
+                { // 371
+                    message: "Would you rather create something new or improve something that already exists?",
+                    options: [
+                        { text: "Creating something new excites me. I’d love to bring fresh ideas into the world.", nextOption: 392 },
+                        { text: "Improving something that already exists feels rewarding. It’s satisfying to make something better.", nextOption: 393 }
+                    ]
+                },
+                { // 372
+                    message: "Would you rather be an important leader or an influential advisor?",
+                    options: [
+                        { text: "Being an important leader is my goal. I’d like to make decisions and guide others.", nextOption: 394 },
+                        { text: "Being an influential advisor seems rewarding. I’d enjoy providing guidance without the pressure of leadership.", nextOption: 395 }
+                    ]
+                },
+                { // 373
+                    message: "Would you rather have a perfect relationship or perfect health?",
+                    options: [
+                        { text: "A perfect relationship is my dream. Love and companionship are what matter most to me.", nextOption: 396 },
+                        { text: "Perfect health would be incredible. I’d love to live a long, strong, and active life.", nextOption: 397 }
+                    ]
+                },
+                { // 374
+                    message: "Would you rather know the meaning of life or the secrets of the universe?",
+                    options: [
+                        { text: "Knowing the meaning of life would give me clarity and purpose.", nextOption: 398 },
+                        { text: "The secrets of the universe would be fascinating. I’d love to understand the mysteries of existence.", nextOption: 399 }
+                    ]
+                },
+                { // 375
+                    message: "Would you rather change one thing about your past or get a glimpse of your future?",
+                    options: [
+                        { text: "Changing one thing about my past could change my present. It’s tempting to undo certain mistakes.", nextOption: 400 },
+                        { text: "A glimpse of my future sounds intriguing. It could give me insight into where I’m headed.", nextOption: 401 }
+                    ]
+                },
+                { // 376
+                    message: "Would you rather have the ability to communicate with animals or speak every human language?",
+                    options: [
+                        { text: "Communicating with animals would be amazing. I could understand and bond with all creatures.", nextOption: 377 },
+                        { text: "Speaking every human language is incredibly powerful. I could connect with anyone, anywhere.", nextOption: 378 }
+                    ]
+                },
+                { // 377
+                    message: "Would you prefer to be able to travel anywhere instantly or have unlimited resources to explore the world?",
+                    options: [
+                        { text: "Instant travel would be incredible. I could go anywhere, anytime, without restrictions.", nextOption: 379 },
+                        { text: "Unlimited resources would make exploration so fulfilling. I could fully immerse myself in new experiences.", nextOption: 380 }
+                    ]
+                },
+                { // 378
+                    message: "Would you rather always be able to tell the truth or always be able to lie convincingly?",
+                    options: [
+                        { text: "Always telling the truth would be freeing. Honesty and transparency are key values for me.", nextOption: 381 },
+                        { text: "Being able to lie convincingly sounds intriguing. It could be useful in certain situations.", nextOption: 382 }
+                    ]
+                },
+                { // 379
+                    message: "Would you prefer to be able to change your appearance at will or control your emotions at will?",
+                    options: [
+                        { text: "Changing my appearance sounds fun. I could look however I want and fit in anywhere.", nextOption: 383 },
+                        { text: "Controlling my emotions at will is powerful. I’d love to stay calm and composed in any situation.", nextOption: 384 }
+                    ]
+                },
+                { // 380
+                    message: "Would you rather be able to read minds or influence people’s decisions?",
+                    options: [
+                        { text: "Reading minds would be fascinating. I could truly understand what people are thinking.", nextOption: 385 },
+                        { text: "Influencing decisions sounds powerful. I could guide people’s choices in the direction I believe is best.", nextOption: 386 }
+                    ]
+                },
+                { // 381
+                    message: "Would you rather live in a world where everything is predictable or one filled with surprises?",
+                    options: [
+                        { text: "A predictable world would be comforting. I could plan everything out and feel in control.", nextOption: 387 },
+                        { text: "A world full of surprises would be exciting. I love the unpredictability of life.", nextOption: 388 }
+                    ]
+                },
+                { // 382
+                    message: "Would you rather always have an answer to everything or never need answers?",
+                    options: [
+                        { text: "Always having answers would be amazing. It would give me confidence in any situation.", nextOption: 389 },
+                        { text: "Never needing answers sounds freeing. I’d be able to trust my intuition and live in the moment.", nextOption: 390 }
+                    ]
+                },
+                { // 383
+                    message: "Would you prefer to have your dream job or live your dream life?",
+                    options: [
+                        { text: "My dream job would be perfect. I’d be so fulfilled and passionate every day.", nextOption: 391 },
+                        { text: "Living my dream life sounds more important. The balance of happiness and freedom is priceless.", nextOption: 392 }
+                    ]
+                },
+                { // 384
+                    message: "Would you rather be able to see the future or change your past?",
+                    options: [
+                        { text: "Seeing the future would give me insight into what’s coming next. I could prepare for anything.", nextOption: 393 },
+                        { text: "Changing my past would be tempting. I could fix mistakes and make better choices.", nextOption: 394 }
+                    ]
+                },
+                { // 385
+                    message: "Would you prefer to live in a big city or a small town?",
+                    options: [
+                        { text: "A big city has so much to offer. The hustle and bustle is energizing, and there’s always something new.", nextOption: 395 },
+                        { text: "A small town sounds peaceful. I’d enjoy the close-knit community and slower pace of life.", nextOption: 396 }
+                    ]
+                },
+                { // 386
+                    message: "Would you rather find true love or be financially secure for life?",
+                    options: [
+                        { text: "True love would be priceless. I believe that love is the most important thing in life.", nextOption: 397 },
+                        { text: "Financial security for life sounds amazing. I’d never have to worry about money again.", nextOption: 398 }
+                    ]
+                },
+                { // 387
+                    message: "Would you rather have unlimited creativity or unlimited focus?",
+                    options: [
+                        { text: "Unlimited creativity sounds incredible. I could come up with endless new ideas and inventions.", nextOption: 399 },
+                        { text: "Unlimited focus would be powerful. I could achieve anything by staying laser-focused on my goals.", nextOption: 400 }
+                    ]
+                },
+                { // 388
+                    message: "Would you rather never face failure or never experience regret?",
+                    options: [
+                        { text: "Never facing failure would be incredible. I’d feel unstoppable and confident in everything I do.", nextOption: 401 },
+                        { text: "Never experiencing regret sounds liberating. I’d be able to embrace my decisions without looking back.", nextOption: 402 }
+                    ]
+                },
+                { // 389
+                    message: "Would you rather be able to live forever or experience the best life possible in a short time?",
+                    options: [
+                        { text: "Living forever would be fascinating. I could witness history unfold and experience everything.", nextOption: 403 },
+                        { text: "Experiencing the best life possible in a short time sounds more meaningful. Quality over quantity.", nextOption: 404 }
+                    ]
+                },
+                { // 390
+                    message: "Would you prefer to explore the deep ocean or outer space?",
+                    options: [
+                        { text: "Exploring the deep ocean is a dream. There’s so much mystery and undiscovered life down there.", nextOption: 405 },
+                        { text: "Outer space would be amazing to explore. I’d love to see the stars and the vastness of the universe.", nextOption: 406 }
+                    ]
+                },
+                { // 391
+                    message: "Would you rather be able to control the weather or control gravity?",
+                    options: [
+                        { text: "Controlling the weather would be powerful. I could create ideal conditions wherever I go.", nextOption: 407 },
+                        { text: "Controlling gravity sounds incredible. I could manipulate the environment and defy physics.", nextOption: 408 }
+                    ]
+                },
+                { // 392
+                    message: "Would you prefer to live in a world where everyone tells the truth or one where everyone is kind?",
+                    options: [
+                        { text: "Everyone telling the truth sounds ideal. It would create transparency and honesty in all relationships.", nextOption: 409 },
+                        { text: "Everyone being kind would be amazing. The world would be so much better if people treated each other with compassion.", nextOption: 410 }
+                    ]
+                },
+                { // 393
+                    message: "Would you rather always feel like you’re on the right path or constantly question your decisions?",
+                    options: [
+                        { text: "Always feeling like I’m on the right path would give me peace of mind and confidence.", nextOption: 411 },
+                        { text: "Constantly questioning my decisions would be tiring, but it could lead to growth and better choices.", nextOption: 412 }
+                    ]
+                },
+                { // 394
+                    message: "Would you prefer to be a master at one thing or moderately skilled at many things?",
+                    options: [
+                        { text: "Mastery of one thing sounds ideal. Being an expert would bring me pride and deep knowledge.", nextOption: 413 },
+                        { text: "Being moderately skilled at many things would be fun. I’d love to have a variety of talents and experiences.", nextOption: 414 }
+                    ]
+                },
+                { // 395
+                    message: "Would you rather be able to live anywhere in the world or experience every culture in the world?",
+                    options: [
+                        { text: "Living anywhere in the world would be amazing. I could choose my ideal environment and lifestyle.", nextOption: 415 },
+                        { text: "Experiencing every culture in the world sounds exciting. I’d love to immerse myself in different ways of life.", nextOption: 416 }
+                    ]
+                },
+                { // 396
+                    message: "Would you rather have the ability to create something new every day or improve something old every day?",
+                    options: [
+                        { text: "Creating something new every day sounds thrilling. I could continuously innovate and bring fresh ideas into the world.", nextOption: 417 },
+                        { text: "Improving something old every day is rewarding. Making existing things better gives me a sense of progress.", nextOption: 418 }
+                    ]
+                },
+                { // 397
+                    message: "Would you rather have a never-ending supply of knowledge or a never-ending supply of resources?",
+                    options: [
+                        { text: "A never-ending supply of knowledge would be incredible. I could learn about anything and understand the world in depth.", nextOption: 419 },
+                        { text: "A never-ending supply of resources would give me endless opportunities to create and build.", nextOption: 420 }
+                    ]
+                },
+                { // 398
+                    message: "Would you rather always be surrounded by people or always be alone?",
+                    options: [
+                        { text: "Being surrounded by people sounds great. I love the energy and companionship of a crowd.", nextOption: 421 },
+                        { text: "Being alone can be peaceful. It’s nice to have time to reflect and focus on myself.", nextOption: 422 }
+                    ]
+                },
+                { // 399
+                    message: "Would you rather live with no regrets or never experience fear?",
+                    options: [
+                        { text: "Living with no regrets would be freeing. I’d embrace my decisions and experiences fully.", nextOption: 423 },
+                        { text: "Never experiencing fear sounds empowering. I could approach every challenge with confidence.", nextOption: 424 }
+                    ]
+                },
+                { // 400
+                    message: "Would you prefer to live in the moment or plan for the future?",
+                    options: [
+                        { text: "Living in the moment is important. I’d want to embrace the present and make the most of today.", nextOption: 425 },
+                        { text: "Planning for the future gives me direction. I prefer to know what’s coming next and prepare accordingly.", nextOption: 426 }
+                    ]
+                },
+                // to be countinued.
+        
+        
+        
+        
 
 
 
@@ -1784,4 +2981,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
     startChat();
 });
-
