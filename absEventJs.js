@@ -554,7 +554,8 @@ const absurdEvents = [
   "Kuolet.",
   "Kuolet kahdesti",
   "Kuolet kolmesti",
-  "Veitsi pyörii sinulle."
+  "Veitsi pyörii sinulle.",
+  "Olet ainoa meistä normaali.",
 
   ];
     
