@@ -199,8 +199,8 @@ body {
 
 .card-container {
     margin-top: -100px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);  
+    display: block;
+    grid-template-columns: repeat(1, 3fr);  
     gap: 25px;
     padding: 20px;
     max-width: 1200px; 
