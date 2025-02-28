@@ -556,6 +556,9 @@ const absurdEvents = [
   "Kuolet kolmesti",
   "Veitsi pyörii sinulle.",
   "Olet ainoa meistä normaali.",
+  "Putin tulee kylään.",
+  "Saat ilmaista juustoa.",
+  "Huoneesta löytyy appelsiini, joka näyttää rumpilta.",
 
   ];
     
