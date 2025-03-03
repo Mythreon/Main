@@ -52,6 +52,12 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <a href="index.html">Coming Soon</a>
                             </li>
                             <li class="dropdown-section">
+                                <h3 class="dropdown-section-title">Tools</h3>
+                                <a href="password.html">Password generator</a>
+                                <a href="index.html">Coming Soon</a>
+
+                            </li>
+                            <li class="dropdown-section">
                                 <h3 class="dropdown-section-title">-</h3>
                                 <a href="WHY.html"><span id="comingSoonText" class="scrambled-text">Do not come.</span></a>
                             </li>
@@ -91,3 +97,4 @@ document.addEventListener("DOMContentLoaded", function() {
         changelogText.classList.toggle('visible');
     });
 });
+
