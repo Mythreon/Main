@@ -559,7 +559,11 @@ const absurdEvents = [
   "Putin tulee kylään.",
   "Saat ilmaista juustoa.",
   "Huoneesta löytyy appelsiini, joka näyttää rumpilta.",
-
+  "Saat 726 816 147 716 appelsiinia",
+  "Olet tulessa.",
+  "Löydät salaisen siskosi",
+  "Vesikannusta tippuu päähäsi vettä aina, kun et katso",
+  "Salaliittoteoriasi innoittavat Riku Rantalan kirjoittamaan kirjan.",
   ];
     
   function generateRandomEvent() {
