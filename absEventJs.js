@@ -564,6 +564,14 @@ const absurdEvents = [
   "Löydät salaisen siskosi",
   "Vesikannusta tippuu päähäsi vettä aina, kun et katso",
   "Salaliittoteoriasi innoittavat Riku Rantalan kirjoittamaan kirjan.",
+  "Hitler herää kuolleesta keksintösi avulla.",
+  "Saat 53 aapista",
+  "Heittopilkkusi vahingossa muuttuu `:ksi",
+  "Tiskaat veitseä, ja se viiltää sinua.",
+  "Saat 5 283 257 999 kelloa, joista 0.00154% on kultaa sisältä.",
+  "Sinulla on tylsää.",
+  "Herätät roomalaisen henkiin",
+  "Käyttiköhän väärää sijamuotoa.",
   ];
     
   function generateRandomEvent() {
