@@ -614,7 +614,7 @@ const absurdEvents = [
   "Jokaisessa huoneessa alkaa kuulua syvällisiä keskusteluja, mutta kaikki puhuvat yhtä aikaa.",
   "Saat uuden koiran, mutta se on itse asiassa lammas, joka pukeutuu koiraksi.",
   "Auringonlasku tapahtuu vain silloin, kun suljet silmäsi.",
-  "Saat kitaran, joka soittaa vain taustamelodiaa elämäsi elokuvassa."
+  "Saat kitaran, joka soittaa vain taustamelodiaa elämäsi elokuvassa.",
 
   ];
     
