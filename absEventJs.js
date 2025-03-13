@@ -593,6 +593,29 @@ const absurdEvents = [
   "Metsässä näkyy vaaleanpunainen susi, joka kertoo unia sinulle.",
   "Sinun täytyy pelata jalkapalloa hiekalla, mutta kenttä on täynnä kitaroita.",
   "Saat kahvikupin, joka on täynnä aikaa.",
+  "Yhtäkkiä kaikki kattilat alkavat tanssia keittiössä.",
+  "Saat lahjaksi ikuisesti jäähtyvän kahvikupin.",
+  "Auringonpaiste alkaa sataa sinulle suoraan käsiin.",
+  "Jokaisella askeleella syntyy uusi värikäs sateenkaari.",
+  "Koko kaupunki päättää, että tänään on virallisesti ympyräpäivä.",
+  "Sateenkaari ilmestyy aina, kun sanot sanan 'avaruus'.",
+  "Saat huoneen täyteen lentäviä hedelmiä, mutta ne eivät osu mihinkään.",
+  "Metsässä kasvaa puita, jotka laulaa jazzia.",
+  "Olet saanut uuden taidon: pystyt kitaran soittamiseen pelkästään ajatuksilla.",
+  "Kitarasi alkaa soittaa itseään, mutta se on todella huono.",
+  "Vene alkaa puhua sinulle ja kertoo, että se on itse asiassa meren kuningas.",
+  "Jokainen aamukahvisi muuttuukin pölyksi, mutta pöly tanssii.",
+  "Kaikki vaatteesi alkavat itsenäisesti valita asusi, mutta vain raitoja ja pilkkuja.",
+  "Saat piirtää pilveä, mutta pilvi ei tykkää siitä.",
+  "Lepakot alkavat kertoa sinulle salaisuuksia, mutta ne eivät ole järkeviä.",
+  "Sateen jälkeen maahan ilmestyy riisikakkuja, mutta niitä ei voi syödä.",
+  "Kirjoitat koodia, mutta rivit alkavat tanssia ja muuttaa muotoaan.",
+  "Koko maailma alkaa pyöriä ympyrää, mutta vain yksi suunta on oikea.",
+  "Jokaisessa huoneessa alkaa kuulua syvällisiä keskusteluja, mutta kaikki puhuvat yhtä aikaa.",
+  "Saat uuden koiran, mutta se on itse asiassa lammas, joka pukeutuu koiraksi.",
+  "Auringonlasku tapahtuu vain silloin, kun suljet silmäsi.",
+  "Saat kitaran, joka soittaa vain taustamelodiaa elämäsi elokuvassa."
+
   ];
     
   function generateRandomEvent() {
