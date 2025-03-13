@@ -4,6 +4,7 @@ const absurdEvents = [
     "Kaikki peilit näyttää sut 30 vuotta nuorempana.",
     "Omat varjot alkaa kuiskutella salaisuuksia.",
     "We buy skin -tarra ilmestyy koko kroppaan.",
+    "477 754 984 873 892 ruokapöytää ilmestyy sekatavarakauppaan!",
     "Muumipeikko tulee perimään velkoja.",
     "Ukkonen sanoo nimesi joka kerta kun jyrähtää.",
     "Saat jättipotin – mutta se on täynnä puhallinsoittimia.",
