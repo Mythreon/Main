@@ -180,7 +180,7 @@ function minimax(board, depth, isMaximizing, depthLimit) {
         }
     }
     return best;
-} // too hard my ass 🖕🖕🖕🖕🖕🖕🖕
+} 
 
 function showResult(message) {
     resultMessage.textContent = message;
