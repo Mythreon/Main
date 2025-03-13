@@ -615,7 +615,9 @@ const absurdEvents = [
   "Saat uuden koiran, mutta se on itse asiassa lammas, joka pukeutuu koiraksi.",
   "Auringonlasku tapahtuu vain silloin, kun suljet silmäsi.",
   "Saat kitaran, joka soittaa vain taustamelodiaa elämäsi elokuvassa.",
-
+  "423 Thingamabob-sivun lahjakorttia.",
+  "Toisinaan taas yö, salaa hiipii sydämeesi.",
+  "Saat jotakin sekatavarakauppaan.",
   ];
     
   function generateRandomEvent() {
