@@ -618,6 +618,7 @@ const absurdEvents = [
   "423 Thingamabob-sivun lahjakorttia.",
   "Toisinaan taas yö, salaa hiipii sydämeesi.",
   "Saat jotakin sekatavarakauppaan.",
+  "Syöt.",
   ];
     
   function generateRandomEvent() {
