@@ -6,6 +6,7 @@ const absurdEvents = [
     "We buy skin -tarra ilmestyy koko kroppaan.",
     "477 754 984 873 892 ruokapöytää ilmestyy sekatavarakauppaan!",
     "Muumipeikko tulee perimään velkoja.",
+    "Viisitoista penkkiä ilmestyy pääsi päälle",
     "Ukkonen sanoo nimesi joka kerta kun jyrähtää.",
     "Saat jättipotin – mutta se on täynnä puhallinsoittimia.",
     "Silmälasit alkaa näyttää pelkkiä memejä.",
@@ -623,6 +624,12 @@ const absurdEvents = [
   "Lamppu pääsi päällä sammuu.",
   "randomIndex ei toimi.",
   "Saat söpön koiran!",
+  "Saat söpön kissan!",
+  "Kirkon kello putoaa sänkyysi, ja soi aina kolmelta aamuyöllä.",
+  "Suolahappo räjähtää",
+  "Erittäin pelottavia asioita tapahtuu",
+  "Koira herättää sinut yöllä",
+  "Saat McDonaldis lahjakortin",
   ];
     
   function generateRandomEvent() {
