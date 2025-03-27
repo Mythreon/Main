@@ -630,6 +630,13 @@ const absurdEvents = [
   "Erittäin pelottavia asioita tapahtuu",
   "Koira herättää sinut yöllä",
   "Saat McDonaldis lahjakortin",
+  "Voluuminappi perii velkoja sinulta",
+  "Näet leskenlehtiä siellä, missä eilen näit kuolemaa!",
+  "Joudut koirankoppiin.",
+  "Pyyhe kuivaa itsesi sinuun",
+  "Avaat takin taskun, mutta siellä on 846 816 kiveä",
+  "Painat väärää nappia laskimessa liian monta kertaa.",
+  "Ärsyynnyt",
   ];
     
   function generateRandomEvent() {
