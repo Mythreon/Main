@@ -619,6 +619,10 @@ const absurdEvents = [
   "Toisinaan taas yö, salaa hiipii sydämeesi.",
   "Saat jotakin sekatavarakauppaan.",
   "Syöt.",
+  "Massiivinen nallekarhu jahtaa sinua",
+  "Lamppu pääsi päällä sammuu.",
+  "randomIndex ei toimi.",
+  "Saat söpön koiran!",
   ];
     
   function generateRandomEvent() {
