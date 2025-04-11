@@ -14,4 +14,4 @@ Importing CSS code
 
 
 
-I spent 10 hours on an useless chatbot just for it to fail the first time I run it. Amazing.
+ **-- Chords not public yet --**
